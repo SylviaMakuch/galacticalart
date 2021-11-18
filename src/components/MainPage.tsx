@@ -15,15 +15,17 @@ const BackDrop = styled.div`
     `
 const CaribeanGirl = styled.img`
     height: 45vh;
-    width: 48vh;
+    width: 45vh;
     margin: 5% 2% 0 0;
 `
 const SocialDiv = styled.div`
     background-color: #ff00b77b;
     height: 45vh;
-    width: 48vh;
+    width: 45vh;
     margin: 5% 1% 0 0;
     color: white;
+    font-size: 60px;
+    text-align: center;
     
 `
 const TextDiv = styled.div`
@@ -39,7 +41,7 @@ function MainPage() {
     return (
         <BackDrop>
             <CaribeanGirl src={caribeangirl} />
-            <SocialDiv>Created by: Sylvia Makuch</SocialDiv>
+            <SocialDiv></SocialDiv>
             <TextDiv>
                 <Typewriter
                     options={{
