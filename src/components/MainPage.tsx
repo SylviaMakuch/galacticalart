@@ -14,14 +14,14 @@ const BackDrop = styled.div`
     justify-content: center;
     `
 const CaribeanGirl = styled.img`
-    height: 45vh;
-    width: 45vh;
+    height: 40vh;
+    width: 40vh;
     margin: 5% 2% 0 0;
 `
 const SocialDiv = styled.div`
     background-color: #ff00b77b;
-    height: 45vh;
-    width: 45vh;
+    height: 40vh;
+    width: 40vh;
     margin: 5% 1% 0 0;
     color: white;
     font-size: 60px;
@@ -30,7 +30,7 @@ const SocialDiv = styled.div`
 `
 const TextDiv = styled.div`
     background-color: #000000a7;
-    height: 30vh;
+    height: 28vh;
     width: 98vh;
     margin: 5%;
     color: white;
