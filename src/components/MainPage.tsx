@@ -23,7 +23,7 @@ const SocialDiv = styled.div`
     height: 40vh;
     width: 40vh;
     margin: 5% 1% 0 0;
-    color: white;
+     color: white;
     font-size: 60px;
     text-align: center;
     

@@ -2,37 +2,48 @@ import React from "react";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
-const Layers = styled.div`
-  	height: 200px;
-	width: 100%;
-`
-const Layer1 = styled.div`
-    height: 20%;
-	background: #6c567b;
-	@keyframes mymove {
-		from {top: 0px;}
-		to {top: 200px;}
+const move =keyframes`
+	0%,100%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(100px)
 	}
 `
+const Layers = styled.div`
+  	height: 500px;
+	width: 100%;
+
+`
+const Layer1 = styled.div`
+    height: 15%;
+	background: #000000;
+	animation: ${move} 0.8s ease-in;
+	animation-delay: 0.9s ;
+`
 const Layer2 = styled.div`
-	height: 20%;
+	height: 15%;
     background: #393e46;
-	transition-delay: 0.6s;
+	animation: ${move} 0.8s ease-in;
+	animation-delay:0.6s ;
 `
 const Layer3 = styled.div`
-	height: 20%;
-    background: #6c5b7b;
-	transition-delay: 0.4s;
+	height: 15%;
+    background: #e9aeda;
+	animation: ${move} 0.8s ease-in;
+	animation-delay:0.4s ;
 `
 const Layer4 = styled.div`
-	height: 20%;
-    background: #c06c84;
-	transition-delay: 0.2s;	
+	height: 15%;
+    background: #6c5b7b;
+	animation: ${move} 0.8s ease-in;
+	animation-delay:0.3s ;
 `
 const Layer5 = styled.div`
-	height: 20%;
-    background: #f67280;
-	transition-delay: 0.1s;
+	height: 15%;
+    background: #00000024;
+	animation: ${move} 0.8s ease-in;
+	animation-delay:0.3s ;
 
 `
 
