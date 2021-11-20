@@ -5,16 +5,10 @@ import { useState } from "react";
 import stars from "./../media/stars.svg";
 
 const moveIn = keyframes`
-	0%, 100%{
+	0%{
 		transform: translateX(0px);
 	}
-	33% {
-		transform: translateX(75%);
-	}
-	66%{
-		transform: translateX(85%);
-	}
-	100% {
+	50% {
 		transform: translateX(100%);
 	}
 `;
@@ -29,11 +23,11 @@ const moveOut = keyframes`
 `;
 
 const titleMove = keyframes`
-	0%, 100% {
-		rotate: translateX(100%);
+	0% {
+		transform: translateY(-950px);
 	}
-	50% {
-		rotate: translateX(0px);
+	100% {
+		transform: translateY(0px);
 	}
 `;
 
@@ -41,7 +35,7 @@ const Layers = styled.div`
 	height: 100%;
 	width: 100%;
 	display: flex;
-	position: fixed;
+	position: absolute;
 `;
 
 const BaseLayer = styled.div<{ $isOpen: boolean }>`
@@ -54,21 +48,21 @@ const BaseLayer = styled.div<{ $isOpen: boolean }>`
 
 const Layer1 = styled(BaseLayer)`
 	background: #e40909;
-	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.6s ease-in-out;
-	animation-delay: 0.5s;
+	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.9s ease-in-out;
+	
 `;
 
 const Layer2 = styled(BaseLayer)`
 	background-image: url(${stars});
-	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.6s ease-in-out;
-	animation-delay: 0.6s;
+	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.9s ease-in-out;
+	animation-delay: 0.1s;
 	flex-direction: column;;
 `
 
 const Layer3 = styled(BaseLayer)`
 	background: #e99c9cfb;
-	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.6s ease-in-out;
-	animation-delay: 0.5s;
+	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.9s ease-in-out;
+	animation-delay: 0.2s;
 `;
 
 const BtnLetsGo = styled.button`
@@ -81,11 +75,12 @@ const BtnLetsGo = styled.button`
 `;
 
 const Gal = styled.div`
-font-family: 'Montserrat', sans-serif;
-font-size: 4vh;
-color: white;
-text-align: center;
-letter-spacing: 2px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4vh;
+	color: white;
+	text-align: center;
+	letter-spacing: 2px;
+	animation: ${titleMove} 7s linear;
 `
 
 export default function EnterAnimation() {
@@ -96,7 +91,8 @@ export default function EnterAnimation() {
 			<Layer1 $isOpen={isAnimationOpen} />
 			<Layer2 $isOpen={isAnimationOpen}>
 				{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
-				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}>Click Here</BtnLetsGo>}
+				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}>Click Here
+				if, you're ready</BtnLetsGo>}
 			</Layer2>
 			<Layer3 $isOpen={isAnimationOpen} />
 		</Layers>
