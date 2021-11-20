@@ -2,12 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import { useState } from "react";
+import stars from "./../media/stars.svg";
 
 const moveIn = keyframes`
 	0%, 100%{
 		transform: translateX(0px);
 	}
-	50% {
+	33% {
+		transform: translateX(75%);
+	}
+	66%{
+		transform: translateX(85%);
+	}
+	100% {
 		transform: translateX(100%);
 	}
 `;
@@ -18,6 +25,15 @@ const moveOut = keyframes`
 	}
 	50% {
 		transform: translateX(0px);
+	}
+`;
+
+const titleMove = keyframes`
+	0%, 100% {
+		rotate: translateX(100%);
+	}
+	50% {
+		rotate: translateX(0px);
 	}
 `;
 
@@ -37,31 +53,40 @@ const BaseLayer = styled.div<{ $isOpen: boolean }>`
 `;
 
 const Layer1 = styled(BaseLayer)`
-	background: #e40909f9;
+	background: #e40909;
 	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.6s ease-in-out;
-	animation-delay: 0.7s;
+	animation-delay: 0.5s;
 `;
 
 const Layer2 = styled(BaseLayer)`
-	background: #4e4a4a;
+	background-image: url(${stars});
 	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.6s ease-in-out;
 	animation-delay: 0.6s;
-`;
+	flex-direction: column;;
+`
 
 const Layer3 = styled(BaseLayer)`
-	background: #e9aedafb;
+	background: #e99c9cfb;
 	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.6s ease-in-out;
-	animation-delay: 0.4s;
+	animation-delay: 0.5s;
 `;
 
 const BtnLetsGo = styled.button`
+	width: 25vh;
+	height: 5vh;
 	background: linear-gradient(45deg, #c13333, transparent);
-	height: 130px;
-	width: 130px;
-	border-radius: 10%;
-	box-shadow: black;
 	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2vh;
 `;
+
+const Gal = styled.div`
+font-family: 'Montserrat', sans-serif;
+font-size: 4vh;
+color: white;
+text-align: center;
+letter-spacing: 2px;
+`
 
 export default function EnterAnimation() {
 	const [isAnimationOpen, setIsAnimationOpen] = useState(true);
@@ -70,9 +95,10 @@ export default function EnterAnimation() {
 		<Layers>
 			<Layer1 $isOpen={isAnimationOpen} />
 			<Layer2 $isOpen={isAnimationOpen}>
-				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}>Lets go</BtnLetsGo>}
+				{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
+				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}>Click Here</BtnLetsGo>}
 			</Layer2>
-			<Layer3 $isOpen={isAnimationOpen}/>
+			<Layer3 $isOpen={isAnimationOpen} />
 		</Layers>
 	)
 };
