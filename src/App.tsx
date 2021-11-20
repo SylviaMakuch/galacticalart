@@ -6,8 +6,8 @@ import SpaceAnimation from "./components/Animation/SpaceAnimation";
 function App() {
     return (
         <div>
-        <MainPage />
         <SpaceAnimation /> 
+        <MainPage />
         <SpacePageI />
         </div>
 
