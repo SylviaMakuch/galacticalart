@@ -48,6 +48,7 @@ function MainPage() {
                         strings: ['Welcome!', 'Are you ready for some space Travel?'],
                         autoStart: true,
                         loop: true,
+                        delay: 75,
                     }}
                 />
             </TextDiv>
