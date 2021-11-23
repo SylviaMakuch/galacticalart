@@ -9,65 +9,80 @@ import orangesky from "./media/orangesky.jpg";
 import mushrooms from "./media/mushrooms.jpg";
 
 const BackDrop = styled.div`
-    height: 300vh;
+    height: 100%;
+    margin: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background-size: cover;
     background-image: url(${stars});
     justify-content: center;
-    flex-wrap: wrap;
     align-content: flex-start;
-
 `
-const LeftSide = styled.div`
+const MostLeftSide = styled.div`
     display: flex;
+    justify-content: center;
     flex-direction: column;
 `
 const LeftPics = styled.img`
-    height: 45vh;
-    width: 40vh;
-    margin: 5% 5% 5% 5%;
-    padding: 2%;
+    height: 100%;
+    width: 30vh;
+    margin: 10px;
+    padding: 5px;
     border: 4px solid #ff00d9;
 `
 
-const RightPic = styled.img`
-    height: 94vh;
-    width: 40vh;
-    margin: 5%;
-    padding: 2%;
+const VerticalPic = styled.img`
+    height: 100%;
+    width: 30vh;
+    padding: 5px;
+    margin: 10px;
     border: 4px solid #ff00d9;
+    align-self: center;
 `
 const SmallPic = styled.img`
-    height: 45vh;
-    width: 40vh;
-    margin: 4% 1% 2% 1%;
-    padding: 2%;
+    height: 35vh;
+    width: 29vh;
+    padding: 5px;
+    margin: 10px;
     border: 4px solid #ff00d9;
 `
 
-const LongPic = styled.img`
-    height: 50vh;
-    width: 90vh;
-    margin: 0% 10% 0% 10%;
-    padding: 2%;
-    border: 4px solid #ff00d9;
- `   
+const HorizontalPic = styled.img`
+    width: 61vh;
+    height: 40vh;
+    padding: 5px;
+    margin: 10px;
+    border: 4px solid #ff00d9;  
+ `
+const MostRightSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ `
+const MakeRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ `
 
 function SpacePageI() {
     return (
         <BackDrop>
-            <LeftSide>
-                <LeftPics src={spaceface}/>
-                <LeftPics src={funkyriver}/>
-            </LeftSide>
-            <RightPic src={octo} />
-            <LongPic src={retrowave} />
-            <SmallPic src={orangesky} />
-            <SmallPic src={mushrooms} />
+            <MostLeftSide>
+                <LeftPics src={spaceface} />
+                <LeftPics src={funkyriver} />
+            </MostLeftSide>
+            <VerticalPic src={octo} />
+            <MostRightSide>
+                <MakeRow>
+                    <SmallPic src={orangesky} />
+                    <SmallPic src={mushrooms} />
+                </MakeRow>
+                <HorizontalPic src={retrowave} />
+            </MostRightSide>
 
         </BackDrop>
 
-        );
-    }
+    );
+}
 export default SpacePageI;

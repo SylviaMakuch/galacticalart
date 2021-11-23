@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 const BackDrop = styled.div`
     height: 100%;
-    display: fixed;
+    display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     background-size: cover;
