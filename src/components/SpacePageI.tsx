@@ -17,6 +17,7 @@ const BackDrop = styled.div`
     background-image: url(${stars});
     justify-content: center;
     align-content: flex-start;
+    flex-wrap: wrap;
 `
 const MostLeftSide = styled.div`
     display: flex;
@@ -25,7 +26,7 @@ const MostLeftSide = styled.div`
 `
 const LeftPics = styled.img`
     height: 100%;
-    width: 30vh;
+    width: 29vh;
     margin: 10px;
     padding: 5px;
     border: 4px solid #ff00d9;
@@ -33,12 +34,30 @@ const LeftPics = styled.img`
 
 const VerticalPic = styled.img`
     height: 100%;
-    width: 30vh;
+    width: 29vh;
     padding: 5px;
     margin: 10px;
     border: 4px solid #ff00d9;
-    align-self: center;
+    
 `
+const MostRightSide = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+ `
+const MakeRow = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+            flex-direction: column;
+        }
+;
+ `
+
 const SmallPic = styled.img`
     height: 35vh;
     width: 29vh;
@@ -49,30 +68,23 @@ const SmallPic = styled.img`
 
 const HorizontalPic = styled.img`
     width: 61vh;
-    height: 40vh;
+    height: 100%;
     padding: 5px;
     margin: 10px;
-    border: 4px solid #ff00d9;  
- `
-const MostRightSide = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- `
-const MakeRow = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
- `
+    border: 4px solid #ff00d9; 
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+        width: 29vh;
+        } 
+`
 
 function SpacePageI() {
     return (
         <BackDrop>
+            <VerticalPic src={octo} />
             <MostLeftSide>
                 <LeftPics src={spaceface} />
                 <LeftPics src={funkyriver} />
             </MostLeftSide>
-            <VerticalPic src={octo} />
             <MostRightSide>
                 <MakeRow>
                     <SmallPic src={orangesky} />

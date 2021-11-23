@@ -12,11 +12,15 @@ const BackDrop = styled.div`
     background-size: cover;
     background-image: url(${field});
     justify-content: center;
-    `
+`
 const CaribeanGirl = styled.img`
     height: 40vh;
     width: 40vh;
     margin: 5% 2% 0 0;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+            height: 20vh;
+            width: 20vh;
+        }
 `
 const SocialDiv = styled.div`
     background-color: #ff00b77b;
@@ -26,6 +30,10 @@ const SocialDiv = styled.div`
      color: white;
     font-size: 60px;
     text-align: center;
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+            height: 20vh;
+            width: 20vh;
+        }
     
 `
 const TextDiv = styled.div`
@@ -36,6 +44,10 @@ const TextDiv = styled.div`
     color: white;
     font-size: 100px;
     text-align: center;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+        height: 15vh;
+        width: 50vh;
+        }
 `
 function MainPage() {
     return (
@@ -52,7 +64,6 @@ function MainPage() {
                     }}
                 />
             </TextDiv>
-
         </BackDrop>
     );
 }
