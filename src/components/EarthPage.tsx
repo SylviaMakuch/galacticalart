@@ -7,8 +7,7 @@ import pirateboat from "./media/pirateboat.jpg";
 import northenlights from "./media/northenlights.jpg";
 
 const MainDiv = styled.div`
-    height:100%;
-    width: 100%;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,13 +15,12 @@ const MainDiv = styled.div`
     margin: 10px;
 `
 const Trees = styled.img`
-    width: 62%;
+    width: 56%;
     padding: 5px;
     margin: 10px;
     border: 4px solid #ff00d9;
 `
 const MakeRow = styled.div`
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,14 +28,6 @@ const MakeRow = styled.div`
             flex-direction: column;
         }
     ;
-
-`
-const PurpleDiv = styled.div`
-    background-color: #ff00ff;
-    width: 30%;
-    padding: 5px;
-    margin: 10px;
-    border: 4px solid #ff00d9;
 `
 const SnowRoad = styled.img`
     width: 30%;
@@ -46,19 +36,19 @@ const SnowRoad = styled.img`
     border: 4px solid #ff00d9;
 `
 const Beach = styled.img`
-    width: 20%;
+    width: 24%;
     padding: 5px;
     margin: 10px;
     border: 4px solid #ff00d9;
 `
 const PirateBoat = styled.img`
-    width: 40%;
+    width: 36%;
     padding: 5px;
     margin: 10px;
     border: 4px solid #ff00d9;
 `
 const NorthLights = styled.img`
-    width: 40%;
+    width: 24%;
     padding: 5px;
     margin: 10px;
     border: 4px solid #ff00d9;  
@@ -69,7 +59,6 @@ function EarthPage() {
         <MainDiv>
             <MakeRow>
              <SnowRoad src={snowyroad} />
-            <PurpleDiv />
             <Trees src={trees} />
             </MakeRow>
             <Beach src={beach} />
