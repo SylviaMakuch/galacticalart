@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import trees from "./media/trees.jpg";
-import snowyroad from "./media/snowyroad.jpg";
-import beach from "./media/beach.jpg";
-import pirateboat from "./media/pirateboat.jpg";
-import northenlights from "./media/northenlights.jpg";
+import trees from "./../media/trees.jpg";
+import snowyroad from "./../media/snowyroad.jpg";
+import beach from "./../media/beach.jpg";
+import pirateboat from "./../media/pirateboat.jpg";
+import northenlights from "./../media/northenlights.jpg";
 
 const MainDiv = styled.div`
     height: 80vh;

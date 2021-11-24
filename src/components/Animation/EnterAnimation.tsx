@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { keyframes } from "styled-components";
 import { useState } from "react";
 import stars from "./../media/stars.svg";
+import { Link } from "react-router-dom";
 
 const moveIn = keyframes`
 	0%{
@@ -66,12 +67,18 @@ const Layer3 = styled(BaseLayer)`
 `;
 
 const BtnLetsGo = styled.button`
-	width: 25vh;
+	width: 15vh;
 	height: 5vh;
+	margin-top: 5vh;
 	background: linear-gradient(45deg, #c13333, transparent);
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2vh;
+	:hover{ 
+        transform: scale(1.05);
+        transition: .5s;
+		border: 2px solid white;
+    }
 `;
 
 const Gal = styled.div`
@@ -88,13 +95,15 @@ export default function EnterAnimation() {
 
 	return (
 		<Layers>
-			<Layer1 $isOpen={isAnimationOpen} />
-			<Layer2 $isOpen={isAnimationOpen}>
-				{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
-				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}>Click Here
-				if, you're ready</BtnLetsGo>}
-			</Layer2>
-			<Layer3 $isOpen={isAnimationOpen} />
+			<Link to="/space">
+				<Layer1 $isOpen={isAnimationOpen} />
+				<Layer2 $isOpen={isAnimationOpen}>
+					{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
+					{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}>Click Here
+					if, you're ready</BtnLetsGo>}
+				</Layer2>
+				<Layer3 $isOpen={isAnimationOpen} />
+			</Link>
 		</Layers>
 	)
 };

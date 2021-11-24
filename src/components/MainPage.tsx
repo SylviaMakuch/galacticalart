@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import field from "./media/field.svg";
-import caribeangirl from "./media/caribeangirl.jpg";
+import field from "./../media/field.svg";
+import caribeangirl from "./../media/caribeangirl.jpg";
 import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
 
