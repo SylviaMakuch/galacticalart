@@ -91,7 +91,6 @@ function SpacePageI() {
     return (
         <BackDrop>
             <VerticalPic src={octo} />
-        
             <MostLeftSide>
                 <LeftPics src={spaceface} />
                 <LeftPics src={funkyriver} />
@@ -103,7 +102,6 @@ function SpacePageI() {
                 </MakeRow>
                 <HorizontalPic src={retrowave} />
             </MostRightSide>
-
         </BackDrop>
 
     );

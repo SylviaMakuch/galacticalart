@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import field from "./media/field.svg";
 import caribeangirl from "./media/caribeangirl.jpg";
 import Typewriter from 'typewriter-effect';
+import SocialTab from './SocialTab';
 
 const BackDrop = styled.div`
     height: 100%;
@@ -30,6 +31,8 @@ const SocialDiv = styled.div`
     color: white;
     font-size: 60px;
     text-align: center;
+    display: grid;
+    align-content: space-between;
         @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
             height: 20vh;
             width: 20vh;
@@ -53,7 +56,9 @@ function MainPage() {
     return (
         <BackDrop>
             <CaribeanGirl src={caribeangirl} />
-            <SocialDiv> Sylvia Makuch</SocialDiv>
+            <SocialDiv> Sylvia Makuch
+                <SocialTab />
+            </SocialDiv>
             <TextDiv>
                 <Typewriter
                     options={{
