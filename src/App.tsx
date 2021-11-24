@@ -9,12 +9,16 @@ import EarthPage from "./components/EarthPage";
 
 function App() {
     return (
-        <div>
-            {/* <EnterAnimation /> */}
-            <MainPage />
-            <SpacePageI />
-            <EarthPage />
-        </div>
+        <BrowserRouter>
+            <div>
+                {/* <Route path="/"> 
+                    <EnterAnimation />
+                </Route> */}
+                <MainPage />
+                <SpacePageI />
+                <EarthPage />
+            </div>
+        </BrowserRouter>
     )
 }
 export default App;

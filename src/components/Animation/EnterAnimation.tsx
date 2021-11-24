@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import { useState } from "react";
-import stars from "./../media/stars.svg";
+import stars from "./../../media/stars.svg"
 import { Link } from "react-router-dom";
 
 const moveIn = keyframes`
@@ -95,7 +95,7 @@ export default function EnterAnimation() {
 
 	return (
 		<Layers>
-			<Link to="/space">
+			{/* <Link to="/space"> */}
 				<Layer1 $isOpen={isAnimationOpen} />
 				<Layer2 $isOpen={isAnimationOpen}>
 					{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
@@ -103,7 +103,7 @@ export default function EnterAnimation() {
 					if, you're ready</BtnLetsGo>}
 				</Layer2>
 				<Layer3 $isOpen={isAnimationOpen} />
-			</Link>
+			{/* </Link> */}
 		</Layers>
 	)
 };
