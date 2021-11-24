@@ -7,7 +7,7 @@ import EarthPage from "./components/EarthPage";
 function App() {
     return (
         <div>
-            <EnterAnimation />
+            {/* <EnterAnimation /> */}
             <MainPage />
             <SpacePageI />
             <EarthPage />

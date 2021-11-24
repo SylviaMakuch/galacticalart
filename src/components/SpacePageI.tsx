@@ -21,7 +21,6 @@ const BackDrop = styled.div`
     flex-wrap: wrap;
     background-repeat: no-repeat;
     background-attachment: fixed;
-;
 `
 const MostLeftSide = styled.div`
     display: flex;

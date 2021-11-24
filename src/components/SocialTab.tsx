@@ -29,7 +29,11 @@ const SocialsGrid = styled.div`
 `
 const SocialsIcons = styled.img` 
     height: 4vh;
-
+    z-index: 3;
+    :hover{ 
+        transform: rotateY(360deg);
+        transition: .5s;
+    }
 `
 
  const SocialTab = () => {
