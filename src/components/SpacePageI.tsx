@@ -9,15 +9,19 @@ import orangesky from "./media/orangesky.jpg";
 import mushrooms from "./media/mushrooms.jpg";
 
 const BackDrop = styled.div`
-    height: 100%;
+    height: 80vh;
     margin: 20px;
     display: flex;
     align-items: flex-start;
     background-size: cover;
     background-image: url(${stars});
+    background-attachment: fixed;
     justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+;
 `
 const MostLeftSide = styled.div`
     display: flex;
@@ -26,14 +30,14 @@ const MostLeftSide = styled.div`
 `
 const LeftPics = styled.img`
     height: 100%;
-    width: 29vh;
+    width: 28vh;
     margin: 10px;
     padding: 5px;
     border: 4px solid #ff00d9;
 `
 
 const VerticalPic = styled.img`
-    height: 100%;
+    height: 97%;
     width: 29vh;
     padding: 5px;
     margin: 10px;
@@ -45,7 +49,6 @@ const MostRightSide = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
  `
 const MakeRow = styled.div`
     height: 100%;
@@ -68,7 +71,7 @@ const SmallPic = styled.img`
 
 const HorizontalPic = styled.img`
     width: 61vh;
-    height: 100%;
+    height: 49.5%;
     padding: 5px;
     margin: 10px;
     border: 4px solid #ff00d9; 
@@ -76,11 +79,19 @@ const HorizontalPic = styled.img`
         width: 29vh;
         } 
 `
+const PurpleDiv = styled.div`
+    background-color: #ff00ff;
+    width: 30%;
+    padding: 5px;
+    margin: 10px;
+    border: 4px solid #ff00d9;
+`
 
 function SpacePageI() {
     return (
         <BackDrop>
             <VerticalPic src={octo} />
+        
             <MostLeftSide>
                 <LeftPics src={spaceface} />
                 <LeftPics src={funkyriver} />

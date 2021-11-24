@@ -27,7 +27,7 @@ const SocialDiv = styled.div`
     height: 40vh;
     width: 40vh;
     margin: 5% 1% 0 0;
-     color: white;
+    color: white;
     font-size: 60px;
     text-align: center;
         @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
@@ -53,7 +53,7 @@ function MainPage() {
     return (
         <BackDrop>
             <CaribeanGirl src={caribeangirl} />
-            <SocialDiv></SocialDiv>
+            <SocialDiv> Sylvia Makuch</SocialDiv>
             <TextDiv>
                 <Typewriter
                     options={{
