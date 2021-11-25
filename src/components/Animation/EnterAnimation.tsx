@@ -95,15 +95,13 @@ export default function EnterAnimation() {
 
 	return (
 		<Layers>
-			{/* <Link to="/space"> */}
-				<Layer1 $isOpen={isAnimationOpen} />
-				<Layer2 $isOpen={isAnimationOpen}>
-					{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
-					{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}>Click Here
-					if, you're ready</BtnLetsGo>}
-				</Layer2>
-				<Layer3 $isOpen={isAnimationOpen} />
-			{/* </Link> */}
-		</Layers>
+			<Layer1 $isOpen={isAnimationOpen} />
+			<Layer2 $isOpen={isAnimationOpen}>
+				{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
+				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}><Link to="/space">Click Here if, you're ready </Link>
+					</BtnLetsGo>}
+			</Layer2>
+			<Layer3 $isOpen={isAnimationOpen} />
+		</Layers>	
 	)
 };

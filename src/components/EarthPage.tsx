@@ -5,14 +5,19 @@ import snowyroad from "./../media/snowyroad.jpg";
 import beach from "./../media/beach.jpg";
 import pirateboat from "./../media/pirateboat.jpg";
 import northenlights from "./../media/northenlights.jpg";
+import stars from './../media/stars.svg';
 
+
+const BackGround = styled.div`
+    background-image: url(${stars});
+`
 const MainDiv = styled.div`
-    height: 80vh;
+    height: 100vh;
+    width: 150vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
-    margin: 10px;
+    background-image: url(${stars});
 `
 const Trees = styled.img`
     width: 56%;
@@ -56,16 +61,17 @@ const NorthLights = styled.img`
 
 function EarthPage() {
     return (
-        <MainDiv>
-            <MakeRow>
-             <SnowRoad src={snowyroad} />
-            <Trees src={trees} />
-            </MakeRow>
-            <Beach src={beach} />
-            <PirateBoat src={pirateboat} />
-            <NorthLights src={northenlights} />
-
-        </MainDiv>
+        <BackGround>
+            <MainDiv>
+                <MakeRow>
+                <SnowRoad src={snowyroad} />
+                <Trees src={trees} />
+                </MakeRow>
+                <Beach src={beach} />
+                <PirateBoat src={pirateboat} />
+                <NorthLights src={northenlights} />
+            </MainDiv>
+        </BackGround>
     );
 }
 export default EarthPage;

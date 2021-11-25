@@ -4,6 +4,7 @@ import field from "./../media/field.svg";
 import caribeangirl from "./../media/caribeangirl.jpg";
 import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
+import SpacePageI from './SpacePageI';
 
 const BackDrop = styled.div`
     height: 100%;
@@ -54,6 +55,7 @@ const TextDiv = styled.div`
 `
 function MainPage() {
     return (
+        
         <BackDrop>
             <CaribeanGirl src={caribeangirl} />
             <SocialDiv> Sylvia Makuch
@@ -69,6 +71,7 @@ function MainPage() {
                     }}
                 />
             </TextDiv>
+            <SpacePageI />
         </BackDrop>
     );
 }

@@ -8,19 +8,18 @@ import retrowave from "./../media/retrowave.jpg";
 import orangesky from "./../media/orangesky.jpg";
 import mushrooms from "./../media/mushrooms.jpg";
 
+
+const BackGround = styled.div`
+    background-image: url(${stars});
+`
 const BackDrop = styled.div`
     height: 80vh;
     margin: 20px;
     display: flex;
     align-items: flex-start;
-    background-size: cover;
-    background-image: url(${stars});
-    background-attachment: fixed;
     justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 `
 const MostLeftSide = styled.div`
     display: flex;
@@ -88,20 +87,22 @@ const PurpleDiv = styled.div`
 
 function SpacePageI() {
     return (
-        <BackDrop>
-            <VerticalPic src={octo} />
-            <MostLeftSide>
-                <LeftPics src={spaceface} />
-                <LeftPics src={funkyriver} />
-            </MostLeftSide>
-            <MostRightSide>
-                <MakeRow>
-                    <SmallPic src={orangesky} />
-                    <SmallPic src={mushrooms} />
-                </MakeRow>
-                <HorizontalPic src={retrowave} />
-            </MostRightSide>
-        </BackDrop>
+        <BackGround>
+            <BackDrop>
+                <VerticalPic src={octo} />
+                <MostLeftSide>
+                    <LeftPics src={spaceface} />
+                    <LeftPics src={funkyriver} />
+                </MostLeftSide>
+                <MostRightSide>
+                    <MakeRow>
+                        <SmallPic src={orangesky} />
+                        <SmallPic src={mushrooms} />
+                    </MakeRow>
+                    <HorizontalPic src={retrowave} />
+                </MostRightSide>
+            </BackDrop>
+        </BackGround>
 
     );
 }
