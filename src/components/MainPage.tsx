@@ -69,7 +69,6 @@ const TextDiv = styled.div`
 
 function MainPage() {
     return (
-        
         <BackDrop>
             <CaribeanGirl src={caribeangirl} />
             <SocialDiv> Sylvia Makuch

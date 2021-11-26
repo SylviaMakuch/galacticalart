@@ -14,9 +14,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<EnterAnimation />} />
                     <Route path="/space" element={<MainPage />} />
-                    {/* <Route path="/earth">
-                    <EarthPage />
-                </ Route> */}
+                    <Route path="/earth" element ={<EarthPage />} />
                 </Routes>
             </BrowserRouter>
         </div>

@@ -7,10 +7,12 @@ import octo from "./../media/octo.jpg";
 import retrowave from "./../media/retrowave.jpg";
 import orangesky from "./../media/orangesky.jpg";
 import mushrooms from "./../media/mushrooms.jpg";
+import { Link } from 'react-router-dom';
 
 const BackGround = styled.div`
     background-image: url(${stars});
     height: 280vh;
+    width: 100%;
 `
 const BackDrop = styled.div`
     height: 80vh;
@@ -102,7 +104,8 @@ function SpacePageI() {
                     <HorizontalPic src={retrowave} />
                 </MostRightSide>
             </BackDrop>
-        </BackGround>
+            <Link to="/earth">Drop down to earth?</Link>
+        </BackGround >
 
     );
 }
