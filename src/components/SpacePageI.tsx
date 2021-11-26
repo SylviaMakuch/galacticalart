@@ -8,9 +8,9 @@ import retrowave from "./../media/retrowave.jpg";
 import orangesky from "./../media/orangesky.jpg";
 import mushrooms from "./../media/mushrooms.jpg";
 
-
 const BackGround = styled.div`
     background-image: url(${stars});
+    height: 280vh;
 `
 const BackDrop = styled.div`
     height: 80vh;

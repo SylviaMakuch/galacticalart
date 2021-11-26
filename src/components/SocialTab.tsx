@@ -24,12 +24,12 @@ const socialIcons = [
 ];
 const SocialsGrid = styled.div` 
     display: flex;
-    justify-content: space-around;
-    padding: 2vh;
+    justify-content: space-between;
 `
 const SocialsIcons = styled.img` 
     height: 4vh;
     z-index: 3;
+    padding: 2vh;
     :hover{ 
         transform: rotateY(360deg);
         transition: .5s;
