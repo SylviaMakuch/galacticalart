@@ -8,16 +8,13 @@ import northenlights from "./../media/northenlights.jpg";
 import stars from './../media/stars.svg';
 
 
-const BackGround = styled.div`
-    background-image: url(${stars});
-`
 const MainDiv = styled.div`
     height: 100vh;
     width: 150vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(${stars});
+  
 `
 const Trees = styled.img`
     width: 56%;
@@ -61,7 +58,7 @@ const NorthLights = styled.img`
 
 function EarthPage() {
     return (
-        <BackGround>
+    
             <MainDiv>
                 <MakeRow>
                 <SnowRoad src={snowyroad} />
@@ -71,7 +68,6 @@ function EarthPage() {
                 <PirateBoat src={pirateboat} />
                 <NorthLights src={northenlights} />
             </MainDiv>
-        </BackGround>
     );
 }
 export default EarthPage;

@@ -105,6 +105,7 @@ function SpacePageI() {
                 </MostRightSide>
             </BackDrop>
             <Link to="/earth">Drop down to earth?</Link>
+            <Link to="/mountain">Drop down to Mountains?</Link>
         </BackGround >
 
     );

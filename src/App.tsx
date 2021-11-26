@@ -5,7 +5,7 @@ import MainPage from "./components/MainPage";
 import SpacePageI from "./components/SpacePageI";
 import EnterAnimation from "./components/Animation/EnterAnimation";
 import EarthPage from "./components/EarthPage";
-
+import MountainStar from "./components/MountainStar";
 
 function App() {
     return (
@@ -15,6 +15,7 @@ function App() {
                     <Route path="/" element={<EnterAnimation />} />
                     <Route path="/space" element={<MainPage />} />
                     <Route path="/earth" element ={<EarthPage />} />
+                    <Route path="/mountain" element ={<MountainStar />} />
                 </Routes>
             </BrowserRouter>
         </div>
