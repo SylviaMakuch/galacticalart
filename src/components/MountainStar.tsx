@@ -27,6 +27,7 @@ const Moon = styled.img<{ $offset: number }>`
     left: 500px;
     top: 60vh;
     transform: translateY(${props => props.$offset * -0.25}px);
+    transform: translateX(${props => props.$offset * 0.5}px);
 `;
 
 const Mountain = styled.img<{ $offset: number }>`
