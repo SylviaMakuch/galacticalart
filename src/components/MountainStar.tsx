@@ -43,7 +43,7 @@ function MountainStar() {
         <Stars>
             <Contain>
                 <Moon src={moon} style={{ transform: `translateY(${offSetY * -0.5}px)` }} />
-                <Mountain src={mountain} />
+                <Mountain src={mountain} style={{ transform: `translateY(${offSetY * 0.5}px)` }} />
             </Contain>
             <EarthPage />
         </Stars>
