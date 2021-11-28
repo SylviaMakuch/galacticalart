@@ -7,7 +7,7 @@ import pirateboat from "./../media/pirateboat.jpg";
 import northenlights from "./../media/northenlights.jpg";
 import stars from './../media/stars.svg';
 
-
+ 
 const MainDiv = styled.div`
     height: 100vh;
     width: 150vh;
