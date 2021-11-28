@@ -46,11 +46,12 @@ const Welcome = styled.div <{ $offset: number }>`
     top: 60vh;
     z-index: 0.8;
 `
-const VertTrans = styled.div`
-    display: relative;
+const VertTrans = styled.div <{ $offset : number}>`
+    position: absolute;
+    justify-content: center;
     z-index: 0.6;
-    left: 350px;
-    top: 60vh;
+    top: 90vh;
+    transform: translateY(${props => props.$offset * 0.8}px);
 `
 
 function MountainStar() {
@@ -63,16 +64,16 @@ function MountainStar() {
     }, []);
 
     return (
-     
+     <div>
             <Stars>
                 <Moon src={moon} $offset={offSetY} />
                 <Mountain src={mountain} $offset={offSetY} />
                 <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
-                <VertTrans>
+            </Stars>
+              <VertTrans $offset={offSetY}>
                     <EarthPage />
                 </VertTrans>
-            </Stars>
-            
+        </div>
 
     );
 }
