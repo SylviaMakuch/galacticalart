@@ -5,9 +5,6 @@ import mountain from "./../media/mountain.png";
 import moon from "./../media/moon.svg";
 import EarthPage from "./EarthPage";
 
-const Contain = styled.div` 
-    min-height: 400vh;
-`;
 
 const Stars = styled.div`
     background-image: url(${twinklestar});
@@ -23,6 +20,7 @@ const Stars = styled.div`
 const Moon = styled.img<{ $offset: number }>`
     height: 20vh;
     z-index: 1;
+    display: block;
     position: absolute;
     left: 350px;
     top: 60vh;
@@ -38,7 +36,7 @@ const Mountain = styled.img<{ $offset: number }>`
     transform: translateY(${props => props.$offset * 0.7}px);
 `;
 
-const Welcome =styled.div <{ $offset: number }>`
+const Welcome = styled.div <{ $offset: number }>`
     transform: translateY(${props => props.$offset * 0.6}px);
     transform: translateX(${props => props.$offset * -0.7}px);
     color: white;
@@ -47,6 +45,12 @@ const Welcome =styled.div <{ $offset: number }>`
     left: 350px;
     top: 60vh;
     z-index: 0.8;
+`
+const VertTrans = styled.div`
+    display: relative;
+    z-index: 0.6;
+    left: 350px;
+    top: 60vh;
 `
 
 function MountainStar() {
@@ -59,15 +63,17 @@ function MountainStar() {
     }, []);
 
     return (
-        <Stars>
-            <Contain>
+     
+            <Stars>
                 <Moon src={moon} $offset={offSetY} />
                 <Mountain src={mountain} $offset={offSetY} />
                 <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
+                <VertTrans>
+                    <EarthPage />
+                </VertTrans>
+            </Stars>
             
-            </Contain>
-            <EarthPage />
-        </Stars>
+
     );
 }
 
