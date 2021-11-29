@@ -4,7 +4,7 @@ import twinklestar from "./../media/twinklestar.svg";
 import mountain from "./../media/mountain.png";
 import moon from "./../media/moon.svg";
 import EarthPage from "./EarthPage";
-
+import { throttle } from "lodash";
 
 const Stars = styled.div`
     background-image: url(${twinklestar});
@@ -48,10 +48,9 @@ const Welcome = styled.div <{ $offset: number }>`
 `
 const VertTrans = styled.div <{ $offset : number}>`
     position: absolute;
-    justify-content: center;
     z-index: 0.6;
     top: 90vh;
-    transform: translateY(${props => props.$offset * 0.8}px);
+    transform: translateY(${props => props.$offset * 0.5}px);
 `
 
 function MountainStar() {
@@ -60,7 +59,7 @@ function MountainStar() {
 
     useEffect(() => {
         window.addEventListener('scroll', handlescroll);
-        return () => window.removeEventListener('scroll', handlescroll);
+        return () => window.removeEventListener('scroll', throttle(handlescroll, 20));
     }, []);
 
     return (
