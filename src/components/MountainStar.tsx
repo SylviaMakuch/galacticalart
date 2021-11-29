@@ -58,8 +58,8 @@ function MountainStar() {
     const handlescroll = () => setOffSetY(window.pageYOffset);
 
     useEffect(() => {
-        window.addEventListener('scroll', handlescroll);
-        return () => window.removeEventListener('scroll', throttle(handlescroll, 20));
+        window.addEventListener('scroll', throttle(handlescroll, 10));
+        return () => window.removeEventListener('scroll', handlescroll);
     }, []);
 
     return (
