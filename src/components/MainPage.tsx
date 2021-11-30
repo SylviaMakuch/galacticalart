@@ -9,12 +9,14 @@ import SpacePageI from './SpacePageI';
 
 const BackDrop = styled.div`
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     background-image: url(${field});
     justify-content: center;
     background-repeat: no-repeat;
+    object-fit: cover;
 `
 
 const ProfilePic = styled.img`

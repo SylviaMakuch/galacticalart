@@ -7,13 +7,17 @@ import octo from "./../media/octo.jpg";
 import retrowave from "./../media/retrowave.jpg";
 import orangesky from "./../media/orangesky.jpg";
 import mushrooms from "./../media/mushrooms.jpg";
+import blastoff from "./../media/blastoff.png";
 import { Link } from 'react-router-dom';
 
 const BackGround = styled.div`
     background-image: url(${stars});
-    height: 280vh;
+    height: 600vh;
     width: 100%;
-`
+    background-repeat: no-repeat;
+    display: block;
+    align-content: center;
+    `
 const BackDrop = styled.div`
     height: 80vh;
     margin: 20px;
@@ -42,7 +46,7 @@ const VerticalPic = styled.img`
     padding: 5px;
     margin: 10px;
     border: 4px solid #ff00d9;
-    
+
 `
 const MostRightSide = styled.div`
     height: 100%;
@@ -60,7 +64,6 @@ const MakeRow = styled.div`
         }
 ;
  `
-
 const SmallPic = styled.img`
     height: 35vh;
     width: 29vh;
@@ -68,7 +71,6 @@ const SmallPic = styled.img`
     margin: 10px;
     border: 4px solid #ff00d9;
 `
-
 const HorizontalPic = styled.img`
     width: 61vh;
     height: 49.5%;
@@ -86,6 +88,18 @@ const PurpleDiv = styled.div`
     margin: 10px;
     border: 4px solid #ff00d9;
 `
+const LinkDic = styled.div`
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+`
+const LiftOff = styled.img`
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+`
+
 
 function SpacePageI() {
     return (
@@ -104,9 +118,12 @@ function SpacePageI() {
                     <HorizontalPic src={retrowave} />
                 </MostRightSide>
             </BackDrop>
-            <Link to="/earth">Drop down to earth?</Link>
-            <Link to="/mountain">Drop down to Mountains?</Link>
+            <LinkDic>
+                <Link to="/mountain">  <LiftOff src={blastoff} />
+                </Link>
+            </LinkDic>
         </BackGround >
+
 
     );
 }

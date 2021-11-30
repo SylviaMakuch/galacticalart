@@ -14,13 +14,14 @@ const MainDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
 `
 const Trees = styled.img`
     width: 56%;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
-    border: 4px solid #ff00d9;
+    border-style: solid;
+    border-width: 6px;
+    border-color: white;
 `
 const MakeRow = styled.div`
     display: flex;
@@ -33,27 +34,35 @@ const MakeRow = styled.div`
 `
 const SnowRoad = styled.img`
     width: 30%;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
-    border: 4px solid #ff00d9;
+    border-style: solid;
+    border-width: 6px;
+    border-color: white;
 `
 const Beach = styled.img`
     width: 24%;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
-    border: 4px solid #ff00d9;
+    border-style: solid;
+    border-width: 6px;
+    border-color: white;
 `
 const PirateBoat = styled.img`
     width: 36%;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
-    border: 4px solid #ff00d9;
+    border-style: solid;
+    border-width: 6px;
+    border-color: white;
 `
 const NorthLights = styled.img`
     width: 24%;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
-    border: 4px solid #ff00d9;  
+    border-style: solid;
+    border-width: 6px;
+    border-color: white;
 `
 
 function EarthPage() {
