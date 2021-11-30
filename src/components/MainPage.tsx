@@ -7,6 +7,7 @@ import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
 import SpacePageI from './SpacePageI';
 import doublearrow from "./../media/doublearrow.svg";
+import { Link } from 'react-router-dom';
 
 const BackDrop = styled.div`
     height: 100%;
@@ -83,7 +84,7 @@ function MainPage() {
         <BackDrop>
             <CaribeanGirl src={caribeangirl} />
             <SocialDiv> Sylvia Makuch
-                <ProfilePic src={artist}/>
+                <ProfilePic src={artist} />
                 <SocialTab />
             </SocialDiv>
             <TextDiv>
@@ -95,7 +96,9 @@ function MainPage() {
                         delay: 75,
                     }}
                 />
-                 <Yes src={doublearrow} >      <Link to="/space" /> </Yes>
+                <Yes src={doublearrow} >
+        
+                </Yes>
             </TextDiv>
             <SpacePageI />
         </BackDrop>

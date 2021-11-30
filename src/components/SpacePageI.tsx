@@ -86,13 +86,6 @@ const HorizontalPic = styled.img`
         } 
 `
 
-const PurpleDiv = styled.div`
-    background-color: #ff00ff;
-    width: 30%;
-    padding: 5px;
-    margin: 10px;
-    border: 4px solid #ff00d9;
-`
 
 const LinkDic = styled.div`
     display: flex;
@@ -129,7 +122,7 @@ function SpacePageI() {
             </BackDrop>
             <LinkDic>
             Want to Come down to Earth? CLick on the Image Below 
-                <Link to="/mountain">  <LiftOff src={rocketbro} />
+                <Link to="/earth">  <LiftOff src={rocketbro} />
                 </Link>
             </LinkDic>
         </BackGround > 

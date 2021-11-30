@@ -89,7 +89,9 @@ const Gal = styled.div`
 	letter-spacing: 2px;
 	animation: ${titleMove} 7s linear;
 `
-
+const Text = styled.p`
+	color: white;
+`
 export default function EnterAnimation() {
 	const [isAnimationOpen, setIsAnimationOpen] = useState(true);
 
@@ -97,8 +99,8 @@ export default function EnterAnimation() {
 		<Layers>
 			<Layer1 $isOpen={isAnimationOpen} />
 			<Layer2 $isOpen={isAnimationOpen}>
-				{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
-				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}><Link to="/space">Click Here if, you're ready </Link>
+				{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}><Text>You are Entering the Galatic Emporium </Text></Gal>}
+				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}><Link to="/main">Click Here if, you're ready </Link>
 					</BtnLetsGo>}
 			</Layer2>
 			<Layer3 $isOpen={isAnimationOpen} />

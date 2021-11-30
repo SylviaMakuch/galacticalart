@@ -1,11 +1,9 @@
 import React from "react";
-import { ReactDOM } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import MainPage from "./components/MainPage";
-import SpacePageI from "./components/SpacePageI";
 import EnterAnimation from "./components/Animation/EnterAnimation";
-import EarthPage from "./components/EarthPage";
 import MountainStar from "./components/MountainStar";
+import SpacePageI from "./components/SpacePageI";
 
 function App() {
     return (
@@ -13,9 +11,9 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<EnterAnimation />} />
-                    <Route path="/space" element={<MainPage />} />
-                    <Route path="/earth" element ={<EarthPage />} />
-                    <Route path="/mountain" element ={<MountainStar />} />
+                    <Route path="/main" element={<MainPage />} />
+                    <Route path="/space" element={<SpacePageI />} />
+                    <Route path="/earth" element ={<MountainStar />} />
                 </Routes>
             </BrowserRouter>
         </div>
