@@ -8,6 +8,7 @@ import retrowave from "./../media/retrowave.jpg";
 import orangesky from "./../media/orangesky.jpg";
 import mushrooms from "./../media/mushrooms.jpg";
 import rocketbro from "./../media/rocketbro.svg";
+import yes from "./../media/yes.svg";
 import { Link } from 'react-router-dom';
 
 const BackGround = styled.div`
@@ -25,6 +26,10 @@ const BackDrop = styled.div`
     justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
+`
+const Yes = styled.img`
+    height: 50px;
+    width: 50px;
 `
 const MostLeftSide = styled.div`
     display: flex;
@@ -105,6 +110,7 @@ const LiftOff = styled.img`
 function SpacePageI() {
     return (
         <BackGround>
+             <Yes src={yes}></Yes>
             <BackDrop>
                 <VerticalPic src={octo} />
                 <MostLeftSide>
@@ -121,7 +127,7 @@ function SpacePageI() {
             </BackDrop>
             <LinkDic>
             Want to Come down to Earth? CLick on the Image Below 
-                <Link to="/mountain">  <LiftOff src={rocketbro  } />
+                <Link to="/mountain">  <LiftOff src={rocketbro} />
                 </Link>
             </LinkDic>
         </BackGround > 
