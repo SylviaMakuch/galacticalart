@@ -7,7 +7,7 @@ import octo from "./../media/octo.jpg";
 import retrowave from "./../media/retrowave.jpg";
 import orangesky from "./../media/orangesky.jpg";
 import mushrooms from "./../media/mushrooms.jpg";
-import blastoff from "./../media/blastoff.png";
+import rocketbro from "./../media/rocketbro.svg";
 import { Link } from 'react-router-dom';
 
 const BackGround = styled.div`
@@ -15,12 +15,11 @@ const BackGround = styled.div`
     height: 600vh;
     width: 100%;
     background-repeat: no-repeat;
-    display: block;
-    align-content: center;
+    background-attachment: scroll;
     `
 const BackDrop = styled.div`
     height: 80vh;
-    margin: 20px;
+    margin: 20vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -89,10 +88,12 @@ const PurpleDiv = styled.div`
     border: 4px solid #ff00d9;
 `
 const LinkDic = styled.div`
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
+    color: white;
+    margin: 30vh;
+    flex-direction: column;
+    align-items: center;
 `
 const LiftOff = styled.img`
     height: 600px;
@@ -119,12 +120,11 @@ function SpacePageI() {
                 </MostRightSide>
             </BackDrop>
             <LinkDic>
-                <Link to="/mountain">  <LiftOff src={blastoff} />
+            Want to Come down to Earth? CLick on the Image Below 
+                <Link to="/mountain">  <LiftOff src={rocketbro  } />
                 </Link>
             </LinkDic>
-        </BackGround >
-
-
+        </BackGround > 
     );
 }
 export default SpacePageI;
