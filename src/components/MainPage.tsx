@@ -6,6 +6,7 @@ import artist from "./../media/artist.jpg";
 import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
 import SpacePageI from './SpacePageI';
+import doublearrow from "./../media/doublearrow.svg";
 
 const BackDrop = styled.div`
     height: 100%;
@@ -35,6 +36,14 @@ const CaribeanGirl = styled.img`
             width: 20vh;
         }
 `
+
+const Yes = styled.img`
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 75vh;
+`
+
 const SocialDiv = styled.div`
     background-color: #ff00b77b;
     line-height: 7vh;
@@ -86,6 +95,7 @@ function MainPage() {
                         delay: 75,
                     }}
                 />
+                 <Yes src={doublearrow} >      <Link to="/space" /> </Yes>
             </TextDiv>
             <SpacePageI />
         </BackDrop>

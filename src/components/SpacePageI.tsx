@@ -8,7 +8,6 @@ import retrowave from "./../media/retrowave.jpg";
 import orangesky from "./../media/orangesky.jpg";
 import mushrooms from "./../media/mushrooms.jpg";
 import rocketbro from "./../media/rocketbro.svg";
-import yes from "./../media/yes.svg";
 import { Link } from 'react-router-dom';
 
 const BackGround = styled.div`
@@ -16,8 +15,9 @@ const BackGround = styled.div`
     height: 600vh;
     width: 100%;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    `
+    background-attachment: fixed;
+`
+
 const BackDrop = styled.div`
     height: 80vh;
     margin: 20vh;
@@ -27,15 +27,13 @@ const BackDrop = styled.div`
     align-content: flex-start;
     flex-wrap: wrap;
 `
-const Yes = styled.img`
-    height: 50px;
-    width: 50px;
-`
+
 const MostLeftSide = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
 `
+
 const LeftPics = styled.img`
     height: 100%;
     width: 28vh;
@@ -50,14 +48,15 @@ const VerticalPic = styled.img`
     padding: 5px;
     margin: 10px;
     border: 4px solid #ff00d9;
-
 `
+
 const MostRightSide = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
  `
+
 const MakeRow = styled.div`
     height: 100%;
     display: flex;
@@ -75,6 +74,7 @@ const SmallPic = styled.img`
     margin: 10px;
     border: 4px solid #ff00d9;
 `
+
 const HorizontalPic = styled.img`
     width: 61vh;
     height: 49.5%;
@@ -85,6 +85,7 @@ const HorizontalPic = styled.img`
         width: 29vh;
         } 
 `
+
 const PurpleDiv = styled.div`
     background-color: #ff00ff;
     width: 30%;
@@ -92,6 +93,7 @@ const PurpleDiv = styled.div`
     margin: 10px;
     border: 4px solid #ff00d9;
 `
+
 const LinkDic = styled.div`
     display: flex;
     justify-content: center;
@@ -100,6 +102,7 @@ const LinkDic = styled.div`
     flex-direction: column;
     align-items: center;
 `
+
 const LiftOff = styled.img`
     height: 600px;
     width: 600px;
@@ -110,7 +113,6 @@ const LiftOff = styled.img`
 function SpacePageI() {
     return (
         <BackGround>
-             <Yes src={yes}></Yes>
             <BackDrop>
                 <VerticalPic src={octo} />
                 <MostLeftSide>
