@@ -5,6 +5,7 @@ import mountain from "./../media/mountain.png";
 import moon from "./../media/moon.svg";
 import EarthPage from "./EarthPage";
 import { throttle } from "lodash";
+import EarthArt from "./EarthGallary";
 
 const Stars = styled.div`
     background-image: url(${twinklestar});
@@ -72,7 +73,7 @@ function MountainStar() {
                 <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
             </Stars>
               <VertTrans $offset={offSetY}>
-                    <EarthPage />
+                    <EarthArt />
                 </VertTrans>
         </div>
 

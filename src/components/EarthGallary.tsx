@@ -50,10 +50,9 @@ export default function EarthArt() {
                     earthData.map(({ image }, index) =>{
                         return <ArtImage image={image} key={index} />
                     })
-                }
+                }   
                 </Card>
             </Container>
         </Body>
-    )
-
-}
+    );
+};
