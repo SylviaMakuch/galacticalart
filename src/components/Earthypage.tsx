@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import EarthData from "./configEarthPage";
+import { earthData } from "./configEarthPage";
 
-const EarthBody = styled.div`
+const Body = styled.div`
     width: 100%;
     height: 100vh;
     background-color:#000;
@@ -10,7 +10,7 @@ const EarthBody = styled.div`
     place-items:center;
 `
 
-const EarthContainer = styled.div`
+const Container = styled.div`
     max-width:600px;
     max-height:350px;
     display:flex;
@@ -22,17 +22,30 @@ const EarthContainer = styled.div`
     } 
 `
 
-const EarthCard = styled.div`
+const Card = styled.div`
     width: 30%;
     height: 100%;
     object-fit:cover;
     transform-origin:center;
     transform:perspective(800px) rotateY(25deg);
     transition:0.5s;
-    --webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    --webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);    
     :hover{
-        transform:perspective(800px);       
-        rotateY(0deg);
+        transform: perspective(800px);       
+        transform: rotateY(0deg);
          opacity:1;
     }
 `
+
+export default function EarthArt() {
+    return (
+        <Body>
+            <Container>
+                <Card>
+
+                </Card>
+            </Container>
+        </Body>
+    )
+
+}

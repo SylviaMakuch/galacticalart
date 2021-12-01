@@ -14,7 +14,7 @@ import ownmegirl from "./../media/ownmegirl.jpg";
 import purplehair from "./../media/purplehair.jpg";
 import reddress from "./../media/reddress.jpg";
 
-export const earthdata = [
+export const earthData = [
     {
         image: trees
     },
