@@ -97,7 +97,6 @@ function MainPage() {
                     }}
                 />
                 <Yes src={doublearrow} >
-        
                 </Yes>
             </TextDiv>
             <SpacePageI />
