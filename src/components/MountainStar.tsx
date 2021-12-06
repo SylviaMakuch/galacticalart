@@ -66,8 +66,8 @@ function MountainStar() {
     }, []);
 
     return (
-        <div>
-            <Link to="/space">
+        <Link to="/earth">
+            <div>
                 <Stars>
                     <Moon src={moon} $offset={offSetY} />
                     <Mountain src={mountain} $offset={offSetY} />
@@ -76,9 +76,9 @@ function MountainStar() {
                 <VertTrans $offset={offSetY}>
                     <EarthGallary />
                 </VertTrans>
-            </Link>
-        </div>
-
+            </div>
+            <EarthGallary />
+        </Link>
     );
 }
 

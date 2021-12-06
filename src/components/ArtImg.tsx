@@ -4,8 +4,7 @@ import styled from 'styled-components';
 const ArtImg = styled.img`
     height: 300px;
     width: 300px;
-`;
-
+`
 interface ArtImageProps {
     image: string;
 }
