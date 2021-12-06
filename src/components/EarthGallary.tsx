@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ArtImage from "./ArtImg";
-import { earthData } from './configEarthPage';
+import { earthData } from './configEarthGallary';
 
 const Body = styled.div`
     width: 100%;
@@ -41,7 +41,7 @@ const Card = styled.div`
 const EarthImage = styled.img`
 `
 
-export default function EarthArt() {
+export default function EarthGallary() {
     return (
         <Body>
             <Container>

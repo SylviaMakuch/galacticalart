@@ -3,9 +3,9 @@ import styled from "styled-components";
 import twinklestar from "./../media/twinklestar.svg";
 import mountain from "./../media/mountain.png";
 import moon from "./../media/moon.svg";
-import EarthPage from "./EarthPage";
 import { throttle } from "lodash";
-import EarthArt from "./EarthGallary";
+import EarthGallary from "./EarthGallary";
+import { Link } from "react-router-dom";
 
 const Stars = styled.div`
     background-image: url(${twinklestar});
@@ -47,7 +47,7 @@ const Welcome = styled.div <{ $offset: number }>`
     top: 60vh;
     z-index: 0.8;
 `
-const VertTrans = styled.div <{ $offset : number}>`
+const VertTrans = styled.div <{ $offset: number }>`
     position: absolute;
     z-index: 0.6;
     top: 120vh;
@@ -66,15 +66,17 @@ function MountainStar() {
     }, []);
 
     return (
-     <div>
-            <Stars>
-                <Moon src={moon} $offset={offSetY} />
-                <Mountain src={mountain} $offset={offSetY} />
-                <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
-            </Stars>
-              <VertTrans $offset={offSetY}>
-                    <EarthArt />
+        <div>
+            <Link to="/space">
+                <Stars>
+                    <Moon src={moon} $offset={offSetY} />
+                    <Mountain src={mountain} $offset={offSetY} />
+                    <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
+                </Stars>
+                <VertTrans $offset={offSetY}>
+                    <EarthGallary />
                 </VertTrans>
+            </Link>
         </div>
 
     );
