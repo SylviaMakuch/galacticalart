@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ArtImage from "./Image";
+import ArtImage from "./ArtImg";
 import { earthData } from './configEarthPage';
 
 const Body = styled.div`
@@ -41,13 +41,13 @@ const Card = styled.div`
 const EarthImage = styled.img`
 `
 
-export default function EarthArt(props) {
+export default function EarthArt() {
     return (
         <Body>
             <Container>
                 <Card>
                     {
-                    props.earthData.image.map(({ image }, index) =>{
+                    earthData.map(({ image }, index) => {
                         return <ArtImage image={image} key={index} />
                     })
                 }   

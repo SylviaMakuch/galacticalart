@@ -4,9 +4,13 @@ import styled from 'styled-components';
 const ArtImg = styled.img`
     height: 300px;
     width: 300px;
-`
+`;
 
-export default function ArtImage({ image =  [] }) {
+interface ArtImageProps {
+    image: string;
+}
+
+export default function ArtImage({image}: ArtImageProps) {
     return(
         <ArtImg src={image} />
     )
