@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import twinklestar from "./../media/twinklestar.svg";
 import mountain from "./../media/mountain.png";
+import mountain2 from "./../media/mountain2.png";
 import moon from "./../media/moon.svg";
 import { throttle } from "lodash";
 import EarthGallary from "./EarthGallary";
@@ -37,6 +38,15 @@ const Mountain = styled.img<{ $offset: number }>`
     position: absolute;
     transform: translateY(${props => props.$offset * 0.7}px);
 `;
+const Mountain2 = styled.img<{ $offset: number }>`
+    height: 50vh;
+    width: 50%;
+    bottom: 5vh;
+    right: 50vh;
+    z-index: 1;
+    position: absolute;
+    transform: translateY(${props => props.$offset * 0.5}px);
+`;
 
 const Welcome = styled.div <{ $offset: number }>`
     transform: translateY(${props => props.$offset * 0.6}px);
@@ -69,9 +79,11 @@ function MountainStar() {
     return (
         <Link to="/earth">
                 <Stars>
+                    <Mountain2 src={mountain2} $offset={offSetY} />
                     <Moon src={moon} $offset={offSetY} />
-                    <Mountain src={mountain} $offset={offSetY} />
                     <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
+                    <Mountain src={mountain} $offset={offSetY} />
+        
                 </Stars>
                 <VertTrans $offset={offSetY}>
                     <EarthGallary />
