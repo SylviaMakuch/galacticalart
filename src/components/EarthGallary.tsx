@@ -6,27 +6,22 @@ import { Link } from 'react-router-dom';
 
 const Body = styled.div`
     width: 174vh;
-    height: 400vh;
+    height: 350vh;
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
+    justify-items: center;
 `
 
-const Card = styled.div`
-   
-`
 
 export default function EarthGallary() {
     return (
     <Link to="EarthGallary" >   
         <Body>
-                <Card>
                     {
                     earthData.map(({ image }, index) => {
                         return <ArtImage image={image} key={index} />
                     })
                 }   
-                </Card>
         </Body>
     </Link>    
     );

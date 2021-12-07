@@ -64,7 +64,7 @@ const VertTrans = styled.div <{ $offset: number }>`
     top: 140vh;
     transform: translateY(${props => props.$offset * 0.6}px);
     display: flex;
-    justify-content: center;
+    justify-items: center;
 `
 
 function MountainStar() {
@@ -83,7 +83,6 @@ function MountainStar() {
                     <Moon src={moon} $offset={offSetY} />
                     <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
                     <Mountain src={mountain} $offset={offSetY} />
-        
                 </Stars>
                 <VertTrans $offset={offSetY}>
                     <EarthGallary />
