@@ -16,6 +16,7 @@ const Stars = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
+    overflow-x: hidden;
 `;
 
 const Moon = styled.img<{ $offset: number }>`
@@ -39,7 +40,7 @@ const Mountain = styled.img<{ $offset: number }>`
 
 const Welcome = styled.div <{ $offset: number }>`
     transform: translateY(${props => props.$offset * 0.6}px);
-    transform: translateX(${props => props.$offset * -0.7}px);
+    transform: translateX(${props => props.$offset * -0.2}px);
     color: white;
     font-size: 300px;
     position: absolute;
@@ -50,7 +51,7 @@ const Welcome = styled.div <{ $offset: number }>`
 const VertTrans = styled.div <{ $offset: number }>`
     position: absolute;
     z-index: 0.6;
-    top: 120vh;
+    top: 140vh;
     transform: translateY(${props => props.$offset * 0.6}px);
     display: flex;
     justify-content: center;
@@ -61,13 +62,12 @@ function MountainStar() {
     const handlescroll = () => setOffSetY(window.pageYOffset);
 
     useEffect(() => {
-        window.addEventListener('scroll', throttle(handlescroll, 5));
+        window.addEventListener('scroll', throttle(handlescroll, 1));
         return () => window.removeEventListener('scroll', handlescroll);
     }, []);
 
     return (
         <Link to="/earth">
-            <div>
                 <Stars>
                     <Moon src={moon} $offset={offSetY} />
                     <Mountain src={mountain} $offset={offSetY} />
@@ -76,8 +76,6 @@ function MountainStar() {
                 <VertTrans $offset={offSetY}>
                     <EarthGallary />
                 </VertTrans>
-            </div>
-            <EarthGallary />
         </Link>
     );
 }

@@ -5,18 +5,15 @@ import { earthData } from './configEarthGallary';
 import { Link } from 'react-router-dom';
 
 const Body = styled.div`
-    width: 400vh;
-    height: 00vh;
-    display: flex;
-    opacity: 0.8;
-    z-index: 7;
- 
+    width: 174vh;
+    height: 400vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
 `
 
 const Card = styled.div`
-   :hover{
-         opacity:0.8;
-    }
+   
 `
 
 export default function EarthGallary() {
