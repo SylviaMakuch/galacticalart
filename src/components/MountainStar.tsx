@@ -64,7 +64,7 @@ const VertTrans = styled.div <{ $offset: number }>`
     top: 140vh;
     transform: translateY(${props => props.$offset * 0.6}px);
     display: flex;
-    justify-items: center;
+    justify-content: center;
 `
 
 function MountainStar() {
@@ -77,17 +77,17 @@ function MountainStar() {
     }, []);
 
     return (
-        <Link to="/earth">
-                <Stars>
-                    <Mountain2 src={mountain2} $offset={offSetY} />
-                    <Moon src={moon} $offset={offSetY} />
-                    <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
-                    <Mountain src={mountain} $offset={offSetY} />
-                </Stars>
-                <VertTrans $offset={offSetY}>
-                    <EarthGallary />
-                </VertTrans>
-        </Link>
+        <div>
+            <Stars>
+                <Mountain2 src={mountain2} $offset={offSetY} />
+                <Moon src={moon} $offset={offSetY} />
+                <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
+                <Mountain src={mountain} $offset={offSetY} />
+            </Stars>
+            <VertTrans $offset={offSetY}>
+                <EarthGallary />
+            </VertTrans>
+        </div>
     );
 }
 

@@ -49,20 +49,20 @@ const BaseLayer = styled.div<{ $isOpen: boolean }>`
 
 const Layer1 = styled(BaseLayer)`
 	background: #e40909;
-	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.9s ease-in-out;
+	animation: ${props => props.$isOpen ? moveIn : moveOut} 1.5s ease-in-out;
 	
 `;
 
 const Layer2 = styled(BaseLayer)`
 	background-image: url(${stars});
-	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.9s ease-in-out;
+	animation: ${props => props.$isOpen ? moveIn : moveOut} 1.5s  ease-in-out;
 	animation-delay: 0.1s;
 	flex-direction: column;;
 `
 
 const Layer3 = styled(BaseLayer)`
 	background: #e99c9cfb;
-	animation: ${props => props.$isOpen ? moveIn : moveOut} 0.9s ease-in-out;
+	animation: ${props => props.$isOpen ? moveIn : moveOut} 1.5s  ease-in-out;
 	animation-delay: 0.2s;
 `;
 
@@ -83,7 +83,7 @@ const BtnLetsGo = styled.button`
 const BtnText = styled.a`
 	color: white;
 	font-family: fantasy;
-	text-underline-position: under;
+	text-underline-position: under;	
 `;
 
 const Gal = styled.div`
@@ -105,9 +105,9 @@ export default function EnterAnimation() {
 			<Layer2 $isOpen={isAnimationOpen}>
 				{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
 				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}><Link to="/main"><BtnText>I am Ready</BtnText> </Link>
-					</BtnLetsGo>}
+				</BtnLetsGo>}
 			</Layer2>
 			<Layer3 $isOpen={isAnimationOpen} />
-		</Layers>	
+		</Layers>
 	)
 };
