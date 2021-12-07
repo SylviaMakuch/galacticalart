@@ -71,7 +71,6 @@ const BtnLetsGo = styled.button`
 	height: 5vh;
 	margin-top: 5vh;
 	background: linear-gradient(45deg, #c13333, transparent);
-	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2vh;
 	:hover{ 
@@ -81,8 +80,15 @@ const BtnLetsGo = styled.button`
     }
 `;
 
+const BtnText = styled.a`
+	color: white;
+	font-family: fantasy;
+	text-underline-position: under;
+`;
+
 const Gal = styled.div`
 	font-family: 'Montserrat', sans-serif;
+	font-family: monospace;
 	font-size: 4vh;
 	color: white;
 	text-align: center;
@@ -98,7 +104,7 @@ export default function EnterAnimation() {
 			<Layer1 $isOpen={isAnimationOpen} />
 			<Layer2 $isOpen={isAnimationOpen}>
 				{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
-				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}><Link to="/main">Click Here if, you're ready </Link>
+				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}><Link to="/main"><BtnText>I am Ready</BtnText> </Link>
 					</BtnLetsGo>}
 			</Layer2>
 			<Layer3 $isOpen={isAnimationOpen} />

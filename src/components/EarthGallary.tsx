@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 
 const Body = styled.div`
     width: 174vh;
-    height: 350vh;
+    height: 400vh;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
+    overflow-x: hidden;
 `
 
 
