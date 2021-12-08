@@ -24,9 +24,8 @@ const BackDrop = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 2vh;
-    @media only screen and (min-device-width: 812px){
-        display: grid;
-        grid-template-columns: 1fr;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+        
     }
 `
 

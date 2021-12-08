@@ -20,8 +20,7 @@ const Body = styled.div`
 
 
 export default function EarthGallary() {
-    return (
-    <Link to="EarthGallary" >   
+    return (   
         <Body>
                     {
                     earthData.map(({ image }, index) => {
@@ -29,6 +28,5 @@ export default function EarthGallary() {
                     })
                 }   
         </Body>
-    </Link>    
     );
 };

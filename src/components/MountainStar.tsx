@@ -67,6 +67,17 @@ const VertTrans = styled.div <{ $offset: number }>`
     justify-items: center;
     align-items: center;
 `
+const LinkDic = styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 30vh;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 37px;
+    margin: 10px;
+`
 
 function MountainStar() {
     const [offSetY, setOffSetY] = useState(0);
@@ -88,6 +99,11 @@ function MountainStar() {
             <VertTrans $offset={offSetY}>
                 <EarthGallary />
             </VertTrans>
+            <LinkDic>
+                <h1>To the Moon! </h1>
+                <p>Click on the Image Below </p>
+                <Link to="/main">  <LiftOff src={rocketbro} />
+                </Link>
         </div>
     );
 }
