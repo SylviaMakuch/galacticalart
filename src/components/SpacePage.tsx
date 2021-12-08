@@ -11,11 +11,11 @@ import rocketbro from "./../media/rocketbro.svg";
 import { Link } from 'react-router-dom';
 
 const BackGround = styled.div`
-        background-image: url(${stars});
-        height: 600vh;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+    background-image: url(${stars});
+    height: 600vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 `
 
 const BackDrop = styled.div`
@@ -25,19 +25,19 @@ const BackDrop = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
+    grid-gap: 3vh;
 `
 
 const VerticalPic = styled.img`
     grid-area: 1/1/3/2;
     border: 4px solid #ff00d9;
-    height: 100%;
+    height: 100vh;
 `
 
 const SpaceFace = styled.img`
     grid-area: 1/2/2/3;
     border: 4px solid #ff00d9;
-    height: 100px;
-    width: 100px;
+    height: 23vh;
 `
 
 const RetroWave = styled.img`
@@ -50,8 +50,7 @@ const RetroWave = styled.img`
 const FunkyRiver = styled.img`
     grid-area: 2/2/3/3;
     border: 4px solid #ff00d9; 
-    height: 100px;
-    width: 100px;
+    height: 23vh;   
 `
 const OrangeMush = styled.div`
    grid-area: 1/3/2/4;
