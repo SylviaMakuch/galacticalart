@@ -5,7 +5,7 @@ import caribeangirl from "./../media/caribeangirl.jpg";
 import artist from "./../media/artist.jpg";
 import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
-import SpacePageI from './SpacePageI';
+import SpacePage from './SpacePage';
 import doublearrow from "./../media/doublearrow.svg";
 import { Link } from 'react-router-dom';
 
@@ -99,7 +99,7 @@ function MainPage() {
                 <Yes src={doublearrow} >
                 </Yes>
             </TextDiv>
-            <SpacePageI />
+            <SpacePage />
         </BackDrop>
     );
 }

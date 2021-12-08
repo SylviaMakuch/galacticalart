@@ -19,52 +19,60 @@ const BackGround = styled.div`
 `
 
 const BackDrop = styled.div`
-        height: 80vh;
-        margin: 20vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        grid-gap: 8px;
-
-
+    height: 20vh;
+    margin: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+`
 
 const VerticalPic = styled.img`
-        grid-area: 1/1/3/2;
-        border: 4px solid #ff00d9;
+    grid-area: 1/1/3/2;
+    border: 4px solid #ff00d9;
+    height: 100%;
 `
 
-const MakeRow = styled.div`
-        height: 100%;
-        display: flex;
-        flex-direction: row;
+const SpaceFace = styled.img`
+    grid-area: 1/2/2/3;
+    border: 4px solid #ff00d9;
+    height: 100px;
+    width: 100px;
+`
+
+const RetroWave = styled.img`
+    grid-area: 2/3/3/5;
+    border: 4px solid #ff00d9; 
+    height: 100px;
+    width: 100px;
+`
+
+const FunkyRiver = styled.img`
+    grid-area: 2/2/3/3;
+    border: 4px solid #ff00d9; 
+    height: 100px;
+    width: 100px;
+`
+const OrangeMush = styled.div`
+   grid-area: 1/3/2/4;
+   justify-content: space-evenly;
+`
+const OrangeSky = styled.img`
+    border: 4px solid #ff00d9; 
+    height: 100px;
+    width: 100px;
+`
+
+const Mushrooms = styled.img`
+    border: 4px solid #ff00d9;
+    height: 100px;
+    width: 100px;
+`
+const LiftOff = styled.img`
+        height: 600px;
+        width: 600px;
         justify-content: center;
-            @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
-                flex-direction: column;
-            }
-    ;
 `
-const SmallPic = styled.img`
-        height: 35vh;
-        width: 29vh;
-        padding: 5px;
-        margin: 10px;
-        border: 4px solid #ff00d9;
-    `
-
-const HorizontalPic = styled.img`
-        width: 61vh;
-        height: 49.5%;
-        padding: 5px;
-        margin: 10px;
-        border: 4px solid #ff00d9; 
-        @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
-            width: 29vh;
-            } 
-`
-
 const LinkDic = styled.div`
         display: flex;
         justify-content: center;
@@ -76,38 +84,20 @@ const LinkDic = styled.div`
         font-size: 37px;
         margin: 10px;
 `
-
-const LiftOff = styled.img`
-        height: 600px;
-        width: 600px;
-        justify-content: center;
-`
-
-function SpacePageI() {
+function SpacePage() {
     return (
         <BackGround>
             <BackDrop>
                 <VerticalPic src={octo} />
-                <MostLeftSide>
-                    <LeftPics src={spaceface} />
-                    <LeftPics src={funkyriver} />
-                </MostLeftSide>
-                <MostRightSide>
-                    <MakeRow>
-                        <SmallPic src={orangesky} />
-                        <SmallPic src={mushrooms} />
-                    </MakeRow>
-                    <HorizontalPic src={retrowave} />
-                </MostRightSide>
+                <SpaceFace src={spaceface} />
+                <FunkyRiver src={funkyriver} />
+                <OrangeMush>
+                    <OrangeSky src={orangesky} />
+                    <Mushrooms src={mushrooms} />
+                </OrangeMush>
+                <RetroWave src={retrowave} />
             </BackDrop>
-            <LinkDic>
-                <h1>Hurry!</h1>
-                <h3>We are flying down to Earth! </h3>
-                <p>Click on the Image Below </p>
-                <Link to="/earth">  <LiftOff src={rocketbro} />
-                </Link>
-            </LinkDic>
         </BackGround >
     );
 }
-export default SpacePageI;
+export default SpacePage;
