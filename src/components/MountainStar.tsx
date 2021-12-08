@@ -11,11 +11,10 @@ import { Link } from "react-router-dom";
 
 const Stars = styled.div`
     background-image: url(${twinklestar});
-    min-height: 1000vh; 
+    min-height: 2000vh; 
     width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed;;
+    background-repeat: repeat;
     background-size: cover;
     z-index: 0;
     overflow-x: hidden;
