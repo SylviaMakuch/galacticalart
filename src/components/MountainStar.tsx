@@ -6,6 +6,7 @@ import mountain2 from "./../media/mountain2.png";
 import moon from "./../media/moon.svg";
 import { throttle } from "lodash";
 import EarthGallary from "./EarthGallary";
+import rocketbro from "./../media/rocketbro.svg";
 import { Link } from "react-router-dom";
 
 const Stars = styled.div`
@@ -79,6 +80,12 @@ const LinkDic = styled.div`
     margin: 10px;
 `
 
+const LiftOff = styled.img`
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+`
+
 function MountainStar() {
     const [offSetY, setOffSetY] = useState(0);
     const handlescroll = () => setOffSetY(window.pageYOffset);
@@ -104,6 +111,7 @@ function MountainStar() {
                 <p>Click on the Image Below </p>
                 <Link to="/main">  <LiftOff src={rocketbro} />
                 </Link>
+            </LinkDic>
         </div>
     );
 }
