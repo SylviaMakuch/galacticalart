@@ -62,9 +62,10 @@ const VertTrans = styled.div <{ $offset: number }>`
     position: absolute;
     z-index: 0.6;
     top: 140vh;
+    left: 100px;
     transform: translateY(${props => props.$offset * 0.6}px);
-    display: flex;
-    justify-content: center;
+    justify-items: center;
+    align-items: center;
 `
 
 function MountainStar() {

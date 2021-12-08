@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ArtImg = styled.img`
-    height: 50vh;
-    width: 50vh;
+    height: 45vh;
+    width: 45vh;
     transform-origin: center;
     transform: perspective(800px) rotateY(25deg);
     transition: 0.5s;
