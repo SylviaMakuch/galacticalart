@@ -16,6 +16,9 @@ const BackGround = styled.div`
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: block;
+    align-items: flex-start;
+    justify-items   : flex-start;
 `
 
 const BackDrop = styled.div`
@@ -24,14 +27,13 @@ const BackDrop = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    align-items: center;
-    grid-gap: 3vh;
+    grid-gap: 2vh;
 `
 
 const VerticalPic = styled.img`
     grid-area: 1/1/3/2;
     border: 4px solid #ff00d9;
-    height: 103vh;
+    height: 104vh;
     width: 35vh;
 `
 
@@ -44,8 +46,8 @@ const SpaceFace = styled.img`
 const RetroWave = styled.img`
     grid-area: 2/3/3/5;
     border: 4px solid #ff00d9; 
-    height: 100px;
-    width: 100px;
+    width: 73vh;
+    height: 50vh;
 `
 
 const FunkyRiver = styled.img`
@@ -56,19 +58,19 @@ const FunkyRiver = styled.img`
 
 const OrangeMush = styled.div`
    grid-area: 1/3/2/4;
-   justify-content: space-evenly;
+   grid-gap: 1vh;
 `
 
 const OrangeSky = styled.img`
     border: 4px solid #ff00d9; 
-    height: 100px;
-    width: 100px;
+    height: 50vh;
+    width: 35vh;
 `
 
 const Mushrooms = styled.img`
     border: 4px solid #ff00d9;
-    height: 100px;
-    width: 100px;
+    height: 50vh;
+    width: 35vh;  
 `
 
 const LiftOff = styled.img`
@@ -102,13 +104,13 @@ function SpacePage() {
                 </OrangeMush>
                 <RetroWave src={retrowave} />
             </BackDrop>
-            {/* <LinkDic>
+            <LinkDic>
                 <h1>Hurry!</h1>
                 <h3>We are flying down to Earth! </h3>
                 <p>Click on the Image Below </p>
                 <Link to="/earth">  <LiftOff src={rocketbro} />
                 </Link>
-            </LinkDic> */}
+            </LinkDic>
         </BackGround >
     );
 }
