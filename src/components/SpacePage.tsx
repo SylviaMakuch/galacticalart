@@ -16,13 +16,9 @@ const BackGround = styled.div`
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: block;
-    align-items: flex-start;
-    justify-items   : flex-start;
 `
 
 const BackDrop = styled.div`
-    height: 20vh;
     margin: 20vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -41,17 +37,18 @@ const SpaceFace = styled.img`
     grid-area: 1/2/2/3;
     border: 4px solid #ff00d9;
     height: 50vh;
+    width: 50vh;
 `
 
 const RetroWave = styled.img`
-    grid-area: 2/3/3/5;
+    grid-area: 2/2/3/3;
     border: 4px solid #ff00d9; 
-    width: 73vh;
+    width: 50vh;
     height: 50vh;
 `
 
 const FunkyRiver = styled.img`
-    grid-area: 2/2/3/3;
+    grid-area: 2/3/3/5;
     border: 4px solid #ff00d9; 
     height: 50vh;  
 `
@@ -70,7 +67,7 @@ const OrangeSky = styled.img`
 const Mushrooms = styled.img`
     border: 4px solid #ff00d9;
     height: 50vh;
-    width: 35vh;  
+  
 `
 
 const LiftOff = styled.img`
@@ -97,12 +94,12 @@ function SpacePage() {
             <BackDrop>
                 <VerticalPic src={octo} />
                 <SpaceFace src={spaceface} />
-                <FunkyRiver src={funkyriver} />
-                <OrangeMush>
-                    <OrangeSky src={orangesky} />
-                    <Mushrooms src={mushrooms} />
-                </OrangeMush>
                 <RetroWave src={retrowave} />
+                <FunkyRiver src={funkyriver} />
+                <Mushrooms src={mushrooms} />
+                {/* <OrangeMush> */}
+                    {/* <OrangeSky src={orangesky} /> */}
+                {/* </OrangeMush> */}
             </BackDrop>
             <LinkDic>
                 <h1>Hurry!</h1>
