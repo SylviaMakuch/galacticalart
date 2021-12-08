@@ -31,13 +31,14 @@ const BackDrop = styled.div`
 const VerticalPic = styled.img`
     grid-area: 1/1/3/2;
     border: 4px solid #ff00d9;
-    height: 100vh;
+    height: 103vh;
+    width: 35vh;
 `
 
 const SpaceFace = styled.img`
     grid-area: 1/2/2/3;
     border: 4px solid #ff00d9;
-    height: 23vh;
+    height: 50vh;
 `
 
 const RetroWave = styled.img`
@@ -50,12 +51,14 @@ const RetroWave = styled.img`
 const FunkyRiver = styled.img`
     grid-area: 2/2/3/3;
     border: 4px solid #ff00d9; 
-    height: 23vh;   
+    height: 50vh;  
 `
+
 const OrangeMush = styled.div`
    grid-area: 1/3/2/4;
    justify-content: space-evenly;
 `
+
 const OrangeSky = styled.img`
     border: 4px solid #ff00d9; 
     height: 100px;
@@ -67,22 +70,25 @@ const Mushrooms = styled.img`
     height: 100px;
     width: 100px;
 `
+
 const LiftOff = styled.img`
-        height: 600px;
-        width: 600px;
-        justify-content: center;
+    height: 600px;
+    width: 600px;
+    justify-content: center;
 `
+
 const LinkDic = styled.div`
-        display: flex;
-        justify-content: center;
-        margin: 30vh;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        font-family: 'Roboto Mono', monospace;
-        font-size: 37px;
-        margin: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 30vh;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 37px;
+    margin: 10px;
 `
+
 function SpacePage() {
     return (
         <BackGround>
@@ -96,6 +102,13 @@ function SpacePage() {
                 </OrangeMush>
                 <RetroWave src={retrowave} />
             </BackDrop>
+            {/* <LinkDic>
+                <h1>Hurry!</h1>
+                <h3>We are flying down to Earth! </h3>
+                <p>Click on the Image Below </p>
+                <Link to="/earth">  <LiftOff src={rocketbro} />
+                </Link>
+            </LinkDic> */}
         </BackGround >
     );
 }
