@@ -9,7 +9,10 @@ import orangesky from "./../media/orangesky.jpg";
 import mushrooms from "./../media/mushrooms.jpg";
 import rocketbro from "./../media/rocketbro.svg";
 import { Link } from 'react-router-dom';
-
+import { Controlled as ControlledZoom } from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+import { useState, useEffect, useCallback } from 'react';
+ 
 const BackGround = styled.div`
     background-image: url(${stars});
     height: 600vh;
@@ -92,14 +95,28 @@ const LinkDic = styled.div`
 `
 
 function SpacePage() {
+    const [isZoomed, setIsZoomed] = useState(false)
+
+  const handleImgLoad = useCallback(() => {
+    setIsZoomed(true)
+  }, [])
+
+  const handleZoomChange = useCallback(shouldZoom => {
+    setIsZoomed(shouldZoom)
+  }, [])
     return (
         <BackGround>
             <BackDrop>
-                <VerticalPic src={octo} />
-                <SpaceFace src={spaceface} />
+            <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>
+                <VerticalPic src={octo}  onLoad={handleImgLoad} width="500vh"/>
+                </ControlledZoom>
+                <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>
+                <SpaceFace src={spaceface} onLoad={handleImgLoad} />
+                </ControlledZoom>
                 <RetroWave src={retrowave} />
                 <FunkyRiver src={funkyriver} />
                 <Mushrooms src={mushrooms} />
+            
                 {/* <OrangeMush> */}
                     {/* <OrangeSky src={orangesky} /> */}
                 {/* </OrangeMush> */}
