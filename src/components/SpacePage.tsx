@@ -27,7 +27,10 @@ const BackDrop = styled.div`
     grid-template-rows: 1fr 1fr;
     grid-gap: 2vh;
     @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 `
 
@@ -43,6 +46,9 @@ const SpaceFace = styled.img`
     border: 4px solid #ff00d9;
     height: 50vh;
     width: 50vh;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+        width: 35vh;
+    }
 `
 
 const RetroWave = styled.img`
@@ -50,12 +56,17 @@ const RetroWave = styled.img`
     border: 4px solid #ff00d9; 
     width: 50vh;
     height: 50vh;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+        width: 35vh;
+    }
 `
 
 const FunkyRiver = styled.img`
     grid-area: 2/3/3/5;
     border: 4px solid #ff00d9; 
     height: 50vh;  
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+        width: 35vh;
 `
 
 const OrangeMush = styled.div`
@@ -72,7 +83,8 @@ const OrangeSky = styled.img`
 const Mushrooms = styled.img`
     border: 4px solid #ff00d9;
     height: 50vh;
-  
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+        width: 35vh;
 `
 
 const LiftOff = styled.img`
