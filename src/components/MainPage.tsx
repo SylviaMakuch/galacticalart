@@ -10,15 +10,16 @@ import doublearrow from "./../media/doublearrow.svg";
 import { Link } from 'react-router-dom';
 
 const BackDrop = styled.div`
-    height: 100%;
-    width: 100%;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     background-image: url(${field});
     justify-content: center;
     background-repeat: no-repeat;
-    object-fit: cover;
+    @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const ProfilePic = styled.img`
@@ -26,16 +27,14 @@ const ProfilePic = styled.img`
     border-radius: 50%;
     padding: 6px;
     border: 5px solid white;
+    
 `
 
 const CaribeanGirl = styled.img`
     height: 40vh;
     width: 40vh;
     margin: 5% 2% 0 0;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
-            height: 20vh;
-            width: 20vh;
-        }
+ 
 `
 
 const Yes = styled.img`
@@ -58,11 +57,7 @@ const SocialDiv = styled.div`
     justify-content: center;
     justify-items: center;
     align-content: space-between;
-        @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
-            height: 20vh;
-            width: 20vh;
-            line-height: 0vh;
-        }
+      
 `
 
 const TextDiv = styled.div`
