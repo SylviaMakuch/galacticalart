@@ -12,14 +12,24 @@ import { Link } from 'react-router-dom';
 
 const BackGround = styled.div`
     background-image: url(${stars});
-    height: 600vh;
+    height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
+    /* display: flex; */
+    position: fixed;
+    justify-content: center;
+    align-items: center;
 `
 
 const BackDrop = styled.div`
+        height: 80vh;
+        margin: 20vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
 `
 
 const MostLeftSide = styled.div`

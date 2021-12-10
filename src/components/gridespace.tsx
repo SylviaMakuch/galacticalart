@@ -25,7 +25,7 @@ const BackDrop = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 2vh;
+    grid-gap: 4vh;
     @media (max-width: 1200px) {
         display: flex;
         flex-direction: column;
@@ -67,6 +67,7 @@ const FunkyRiver = styled.img`
     height: 50vh;  
     @media (max-width: 1200px) {
         width: 35vh;
+        
 `
 
 /* const OrangeMush = styled.div`

@@ -5,19 +5,18 @@ import caribeangirl from "./../media/caribeangirl.jpg";
 import artist from "./../media/artist.jpg";
 import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
-import SpacePage from './SpacePage';
+import SpacePageI from './SpacePageI';
 import doublearrow from "./../media/doublearrow.svg";
 import { Link } from 'react-router-dom';
 
 const BackDrop = styled.div`
-    display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    background-size: cover;
     background-image: url(${field});
     justify-content: center;
-    background-repeat: no-repeat;
     @media (max-width: 900px) {
-        flex-direction: column;
+        
         align-items: center;
     }
 `
@@ -62,15 +61,16 @@ const SocialDiv = styled.div`
 
 const TextDiv = styled.div`
     background-color: #000000a7;
-    height: 28vh;
+    height: 25vh;
     width: 98vh;
     margin: 5%;
     color: white;
     font-size: 100px;
     text-align: center;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
-        height: 15vh;
-        width: 50vh;
+    @media (max-width: 1200px){
+        height: 17vh;
+        font-size: 70px;
+        padding: 5px;
         }
 `
 
@@ -94,7 +94,7 @@ function MainPage() {
                 <Yes src={doublearrow} >
                 </Yes>
             </TextDiv>
-            <SpacePage />
+            <SpacePageI />
         </BackDrop>
     );
 }
