@@ -16,10 +16,8 @@ const BackGround = styled.div`
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* display: flex; */
-    position: fixed;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+
 `
 
 const BackDrop = styled.div`
