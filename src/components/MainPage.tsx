@@ -10,15 +10,17 @@ import doublearrow from "./../media/doublearrow.svg";
 import { Link } from 'react-router-dom';
 
 const BackDrop = styled.div`
-
-    align-items: flex-start;
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
     background-size: cover;
     background-image: url(${field});
     justify-content: center;
     @media (max-width: 900px) {
         flex-direction: column;
         align-items: center;
+        flex-wrap: nowrap;
     }
 `
 
@@ -61,6 +63,7 @@ const SocialDiv = styled.div`
 `
 
 const TextDiv = styled.div`
+display: block;
     background-color: #000000a7;
     height: 25vh;
     width: 98vh;
@@ -77,6 +80,7 @@ const TextDiv = styled.div`
 
 function MainPage() {
     return (
+        <div>
         <BackDrop>
             <CaribeanGirl src={caribeangirl} />
             <SocialDiv> Sylvia Makuch
@@ -95,8 +99,9 @@ function MainPage() {
                 <Yes src={doublearrow} >
                 </Yes>
             </TextDiv>
+            </BackDrop>
             <SpacePageI />
-        </BackDrop>
+        </div>
     );
 }
 export default MainPage;
