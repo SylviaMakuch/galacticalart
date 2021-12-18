@@ -102,7 +102,7 @@ const LinkDiv = styled.div`
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 37px;
-    margin: 30vh;
+    margin: 25vh;
 `;
 
 const LiftOff = styled.img`
