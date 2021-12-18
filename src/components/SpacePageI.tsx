@@ -17,7 +17,12 @@ const BackGround = styled.div`
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media and screen(max-width: 900px){
+    flex-direction: column;
+    flex-wrap: nowrap;
+    }
 `
 
 const BackDrop = styled.div`

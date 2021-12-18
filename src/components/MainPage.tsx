@@ -18,33 +18,30 @@ const BackDrop = styled.div`
     background-image: url(${field});
     justify-content: center;
     @media (max-width: 900px) {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
+        flex-direction: row;
+    flex-wrap: wrap;
     }
-`
+`;
 
 const ProfilePic = styled.img`
     height: 20vh;
     border-radius: 50%;
     padding: 6px;
     border: 5px solid white;
-    
-`
+`;
 
 const CaribeanGirl = styled.img`
     height: 40vh;
     width: 40vh;
     margin: 5% 2% 0 0;
- 
-`
+`;
 
 const Yes = styled.img`
     height: 100px;
     width: 100px;
     position: absolute;
     top: 75vh;
-`
+`;
 
 const SocialDiv = styled.div`
     background-color: #ff00b77b;
@@ -59,8 +56,7 @@ const SocialDiv = styled.div`
     justify-content: center;
     justify-items: center;
     align-content: space-between;
-      
-`
+`;
 
 const TextDiv = styled.div`
 display: block;
@@ -76,29 +72,29 @@ display: block;
         font-size: 70px;
         padding: 5px;
         }
-`
+`;
 
 function MainPage() {
     return (
         <div>
-        <BackDrop>
-            <CaribeanGirl src={caribeangirl} />
-            <SocialDiv> Sylvia Makuch
-                <ProfilePic src={artist} />
-                <SocialTab />
-            </SocialDiv>
-            <TextDiv>
-                <Typewriter
-                    options={{
-                        strings: ['Welcome!', 'Are you ready for some space Travel?'],
-                        autoStart: true,
-                        loop: true,
-                        delay: 75,
-                    }}
-                />
-                <Yes src={doublearrow} >
-                </Yes>
-            </TextDiv>
+            <BackDrop>
+                <CaribeanGirl src={caribeangirl} />
+                <SocialDiv> Sylvia Makuch
+                    <ProfilePic src={artist} />
+                    <SocialTab />
+                </SocialDiv>
+                <TextDiv>
+                    <Typewriter
+                        options={{
+                            strings: ['Welcome!', 'Are you ready for some space Travel?'],
+                            autoStart: true,
+                            loop: true,
+                            delay: 75,
+                        }}
+                    />
+                    <Yes src={doublearrow} >
+                    </Yes>
+                </TextDiv>
             </BackDrop>
             <SpacePageI />
         </div>

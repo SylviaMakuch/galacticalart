@@ -13,7 +13,7 @@ function App() {
             <BrowserRouter>
                 <ScrollToTop />
                 <Routes>
-                    <Route path="/" element={<EnterAnimation />} />
+                    <Route path="/galacticalart" element={<EnterAnimation />} />
                     <Route path="/main" element={<MainPage />} />
                     <Route path="/space" element={<SpacePageI />} />
                     <Route path="/earth" element={<MountainStar />} />
