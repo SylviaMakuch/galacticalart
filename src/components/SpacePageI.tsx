@@ -97,12 +97,14 @@ const LinkDiv = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
-    top: 70vh;
     flex-direction: column;
     align-items: center;
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 37px;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+        top: 40vh;
+    } 
 `;
 
 const LiftOff = styled.img`
