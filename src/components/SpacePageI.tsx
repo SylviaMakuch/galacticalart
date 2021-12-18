@@ -18,12 +18,12 @@ const BackGround = styled.div`
     background-size: cover;
     background-position:center;
     width: 190vh;
-    height: 290vh;
+    height: 240vh;
     position: absolute;
 `;
 
-const BackDrop = styled.div`
-     height: 80vh;
+const MainDiv = styled.div`
+    height: 80vh;
     margin: 20vh;
     justify-content: center;
     display: flex;
@@ -31,12 +31,13 @@ const BackDrop = styled.div`
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-    @media and screen(max-width: 900px){
+    @media and screen(max-width: 00px){
         flex-direction: column;
         flex-wrap: nowrap;
+    }
 `;
 
-const MostLeftSide = styled.div`
+const LeftContainerRightDiv = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -58,19 +59,23 @@ const VerticalPic = styled.img`
     border: 4px solid #ff00d9;
 `;
 
-const MostRightSide = styled.div`
+const RightContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
-const MakeRow = styled.div`
+const LeftContainer = styled.div`
+    display: flex;
+`; 
+
+const RightContainerTopDiv = styled.div`
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+    @media only screen (max-device-width: 1200px){
         flex-direction: column;
     };
 `;
@@ -88,7 +93,7 @@ const HorizontalPic = styled.img`
     padding: 5px;
     margin: 10px;
     border: 4px solid #ff00d9; 
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
+    @media only screen and(max-device-width: 1200px){
         width: 29vh;
     } 
 `;
@@ -102,8 +107,8 @@ const LinkDiv = styled.div`
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 37px;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
-        top: 40vh;
+    @media only screen and (max-device-width: 812px){
+        top: 400px;
     } 
 `;
 
@@ -116,22 +121,24 @@ const LiftOff = styled.img`
 export default function SpacePageI() {
     return (
         <>
-            <BackGround>
-            </BackGround >
-            <BackDrop>
+            <BackGround></BackGround>
+            <MainDiv>
+                <LeftContainer>
                 <VerticalPic src={octo} />
-                <MostLeftSide>
+                <LeftContainerRightDiv>
                     <LeftPics src={spaceface} />
                     <LeftPics src={funkyriver} />
-                </MostLeftSide>
-                <MostRightSide>
-                    <MakeRow>
+                </LeftContainerRightDiv>
+                </LeftContainer>
+
+                <RightContainer>
+                    <RightContainerTopDiv>
                         <SmallPic src={orangesky} />
                         <SmallPic src={mushrooms} />
-                    </MakeRow>
+                    </RightContainerTopDiv>
                     <HorizontalPic src={retrowave} />
-                </MostRightSide>
-            </BackDrop>
+                </RightContainer>
+            </MainDiv>
             <LinkDiv>
                 <h1>Hurry!</h1>
                 <h3>We are flying down to Earth! </h3>

@@ -6,7 +6,8 @@ import theworldisyours from "./../media/theworldisyours.jpg";
 
 const BackGround = styled.div`
     position: relative;
-    top: 90vh;
+    width: 100%;
+    top: 3000px;
     bottom: 10px;
     background-color: #ec5df3;
     display: flex;
@@ -21,10 +22,11 @@ const Text = styled.div`
     font-family: 'Work Sans', sans-serif;
     font-size: 25px;
     font-weight: 300;
+    
 `;
 
 const Img = styled.img`
-    width: 40vh;
+    width: 800px;
 ` ;  
 
 export default function Footer() {
