@@ -111,11 +111,11 @@ const LiftOff = styled.img`
     justify-content: center;
 `;
 
-function SpacePageI() {
+export default function SpacePageI() {
     return (
         <>
-        <BackGround>
-        </BackGround >
+            <BackGround>
+            </BackGround >
             <BackDrop>
                 <VerticalPic src={octo} />
                 <MostLeftSide>
@@ -130,7 +130,7 @@ function SpacePageI() {
                     <HorizontalPic src={retrowave} />
                 </MostRightSide>
             </BackDrop>
-        <LinkDiv>
+            <LinkDiv>
                 <h1>Hurry!</h1>
                 <h3>We are flying down to Earth! </h3>
                 <p>Click on the Image Below </p>
@@ -139,5 +139,4 @@ function SpacePageI() {
             </LinkDiv>
         </>
     );
-}
-export default SpacePageI;
+    }
