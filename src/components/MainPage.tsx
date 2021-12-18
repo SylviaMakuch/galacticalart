@@ -8,6 +8,7 @@ import SocialTab from './SocialTab';
 import SpacePageI from './SpacePageI';
 import doublearrow from "./../media/doublearrow.svg";
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const BackDrop = styled.div`
     display: flex;
@@ -97,6 +98,7 @@ function MainPage() {
                 </TextDiv>
             </BackDrop>
             <SpacePageI />
+            <Footer/>
         </div>
     );
 }
