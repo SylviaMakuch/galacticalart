@@ -15,24 +15,25 @@ const BackGround = styled.div`
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    @media and screen(max-width: 900px){
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+    background-size: cover;
+    background-position:center;
+    width: 190vh;
+    height: 290vh;
+    position: absolute;
 `;
 
 const BackDrop = styled.div`
      height: 80vh;
     margin: 20vh;
-    display: flex;
-    align-items: flex-start;
     justify-content: center;
+    display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    @media and screen(max-width: 900px){
+        flex-direction: column;
+        flex-wrap: nowrap;
 `;
 
 const MostLeftSide = styled.div`
@@ -102,7 +103,6 @@ const LinkDiv = styled.div`
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 37px;
-    margin: 25vh;
 `;
 
 const LiftOff = styled.img`
@@ -115,6 +115,7 @@ function SpacePageI() {
     return (
         <>
         <BackGround>
+        </BackGround >
             <BackDrop>
                 <VerticalPic src={octo} />
                 <MostLeftSide>
@@ -129,7 +130,6 @@ function SpacePageI() {
                     <HorizontalPic src={retrowave} />
                 </MostRightSide>
             </BackDrop>
-        </BackGround >
         <LinkDiv>
                 <h1>Hurry!</h1>
                 <h3>We are flying down to Earth! </h3>
