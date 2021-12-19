@@ -11,11 +11,12 @@ import { Link } from "react-router-dom";
 
 const Stars = styled.div`
     background-image: url(${twinklestar});
-    min-height: 2000vh; 
-    width: 100%;
-    background-attachment: fixed;;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position:center;
+    width: 3000px;
+    height: 4000px;
+    position: absolute;
     z-index: 0;
     overflow-x: hidden;
 `;
@@ -57,7 +58,8 @@ const Welcome = styled.div <{ $offset: number }>`
     left: 350px;
     top: 60vh;
     z-index: 0.8;
-`
+`;
+
 const VertTrans = styled.div <{ $offset: number }>`
     position: absolute;
     z-index: 0.6;
@@ -66,7 +68,8 @@ const VertTrans = styled.div <{ $offset: number }>`
     transform: translateY(${props => props.$offset * 0.6}px);
     justify-items: center;
     align-items: center;
-`
+`;
+
 const LinkDic = styled.div`
     display: flex;
     justify-content: center;
@@ -77,13 +80,13 @@ const LinkDic = styled.div`
     font-family: 'Roboto Mono', monospace;
     font-size: 37px;
     margin: 10px;
-`
+`;
 
 const LiftOff = styled.img`
     height: 600px;
     width: 600px;
     justify-content: center;
-`
+`;
 
 function MountainStar() {
     const [offSetY, setOffSetY] = useState(0);

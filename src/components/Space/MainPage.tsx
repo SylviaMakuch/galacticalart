@@ -8,7 +8,7 @@ import SocialTab from './SocialTab';
 import SpacePageI from './SpacePageI';
 import doublearrow from "./../media/doublearrow.svg";
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
+import Footer from '../Space/FooterSpace';
 
 const BackDrop = styled.div`
     display: flex;
@@ -20,7 +20,7 @@ const BackDrop = styled.div`
     justify-content: center;
     @media (max-width: 900px) {
         flex-direction: row;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 `;
 

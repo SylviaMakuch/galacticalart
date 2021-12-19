@@ -17,20 +17,20 @@ const BackGround = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    width: 190vh;
-    height: 240vh;
+    width: 3000px;
+    height: 4000px;
     position: absolute;
 `;
 
 const MainDiv = styled.div`
     height: 80vh;
-    margin: 20vh;
     justify-content: center;
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
+    margin-top: 100px;
     @media and screen(max-width: 00px){
         flex-direction: column;
         flex-wrap: nowrap;
@@ -107,8 +107,10 @@ const LinkDiv = styled.div`
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 37px;
-    @media only screen and (max-device-width: 812px){
-        top: 400px;
+    margin: 100px;
+    @media only screen and (max-device-width: 1200px){
+        position: relative;
+        top: 1000px;
     } 
 `;
 
@@ -138,14 +140,14 @@ export default function SpacePageI() {
                     </RightContainerTopDiv>
                     <HorizontalPic src={retrowave} />
                 </RightContainer>
-            </MainDiv>
-            <LinkDiv>
+                <LinkDiv>
                 <h1>Hurry!</h1>
                 <h3>We are flying down to Earth! </h3>
                 <p>Click on the Image Below </p>
                 <Link to="/earth">  <LiftOff src={rocketbro} />
                 </Link>
             </LinkDiv>
+            </MainDiv>  
         </>
     );
     }

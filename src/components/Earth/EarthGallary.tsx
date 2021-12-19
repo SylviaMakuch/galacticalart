@@ -16,8 +16,7 @@ const Body = styled.div`
     @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
         grid-template-columns: repeat(2, 1fr); 
     }
-`
-
+`; 
 
 export default function EarthGallary() {
     return (   
