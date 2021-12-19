@@ -14,8 +14,9 @@ const BackGround = styled.div`
     justify-content: space-evenly;
     align-items: center;
     height: 80vh;
+    z-index: 3;
     @media (max-width: 1600px){
-        top: 2500px;
+        top: 100px;
     }
 `;
 

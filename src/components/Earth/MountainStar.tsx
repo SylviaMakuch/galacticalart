@@ -8,16 +8,16 @@ import { throttle } from "lodash";
 import EarthGallary from "./EarthGallary";
 import rocketbro from "./../../media/rocketbro.svg";
 import { Link } from "react-router-dom";
+import Footer from "./FooterEarth";
 
 const Stars = styled.div`
     background-image: url(${twinklestar});
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    width: 3000px;
-    height: 4000px;
-    /* position: absolute; */
-    z-index: 0;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 1000vh; 
     overflow-x: hidden;
 `;
 
@@ -42,8 +42,6 @@ const Mountain = styled.img<{ $offset: number }>`
 const Mountain2 = styled.img<{ $offset: number }>`
     height: 50vh;
     width: 50%;
-    bottom: 5vh;
-    right: 50vh;
     z-index: 1;
     position: absolute;
     transform: translateY(${props => props.$offset * 0.5}px);
@@ -65,12 +63,12 @@ const VertTrans = styled.div <{ $offset: number }>`
     z-index: 0.6;
     top: 140vh;
     left: 100px;
-    transform: translateY(${props => props.$offset * 0.6}px);
+    transform: translateY(${props => props.$offset * 0.2}px);
     justify-items: center;
     align-items: center;
 `;
 
-const LinkDic = styled.div`
+const LinkDiv = styled.div`
     display: flex;
     justify-content: center;
     margin: 30vh;
@@ -80,6 +78,7 @@ const LinkDic = styled.div`
     font-family: 'Roboto Mono', monospace;
     font-size: 37px;
     margin: 10px;
+    z-index: 1;
 `;
 
 const LiftOff = styled.img`
@@ -93,7 +92,7 @@ function MountainStar() {
     const handlescroll = () => setOffSetY(window.pageYOffset);
 
     useEffect(() => {
-        window.addEventListener('scroll', throttle(handlescroll, 1));
+        window.addEventListener('scroll', throttle(handlescroll, 0.1));
         return () => window.removeEventListener('scroll', handlescroll);
     }, []);
 
@@ -108,12 +107,13 @@ function MountainStar() {
             <VertTrans $offset={offSetY}>
                 <EarthGallary />
             </VertTrans>
-            <LinkDic>
+            <LinkDiv>
                 <h1>To the Moon! </h1>
                 <p>Click on the Image Below </p>
                 <Link to="/main">  <LiftOff src={rocketbro} />
                 </Link>
-            </LinkDic>
+            </LinkDiv>
+            <Footer />
         </div>
     );
 }
