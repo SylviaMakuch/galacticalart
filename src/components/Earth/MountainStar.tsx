@@ -12,12 +12,13 @@ import Footer from "./FooterEarth";
 
 const Stars = styled.div`
     background-image: url(${twinklestar});
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
     width: 100%;
-    min-height: 1000vh; 
+    height: 800vh;
+    z-index: 0;
     overflow-x: hidden;
 `;
 
@@ -42,9 +43,11 @@ const Mountain = styled.img<{ $offset: number }>`
 const Mountain2 = styled.img<{ $offset: number }>`
     height: 50vh;
     width: 50%;
+    right: 50vh;
+    bottom: 5px;
     z-index: 1;
     position: absolute;
-    transform: translateY(${props => props.$offset * 0.5}px);
+    transform: translateY(${props => props.$offset * 0.7}px);
 `;
 
 const Welcome = styled.div <{ $offset: number }>`
@@ -60,10 +63,11 @@ const Welcome = styled.div <{ $offset: number }>`
 
 const VertTrans = styled.div <{ $offset: number }>`
     position: absolute;
-    z-index: 0.6;
+    z-index: 3;
     top: 140vh;
     left: 100px;
     transform: translateY(${props => props.$offset * 0.2}px);
+    display: flex;
     justify-items: center;
     align-items: center;
 `;
@@ -92,12 +96,12 @@ function MountainStar() {
     const handlescroll = () => setOffSetY(window.pageYOffset);
 
     useEffect(() => {
-        window.addEventListener('scroll', throttle(handlescroll, 0.1));
+        window.addEventListener('scroll', throttle(handlescroll, 0));
         return () => window.removeEventListener('scroll', handlescroll);
     }, []);
 
     return (
-        <div>
+        <>
             <Stars>
                 <Mountain2 src={mountain2} $offset={offSetY} />
                 <Moon src={moon} $offset={offSetY} />
@@ -107,14 +111,14 @@ function MountainStar() {
             <VertTrans $offset={offSetY}>
                 <EarthGallary />
             </VertTrans>
-            <LinkDiv>
+            <Footer />
+            {/* <LinkDiv>
                 <h1>To the Moon! </h1>
                 <p>Click on the Image Below </p>
                 <Link to="/main">  <LiftOff src={rocketbro} />
                 </Link>
-            </LinkDiv>
-            <Footer />
-        </div>
+            </LinkDiv> */}
+        </>
     );
 }
 

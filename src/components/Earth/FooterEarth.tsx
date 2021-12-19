@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import SocialTab from "./../Space/SocialTab";
-import theworldisyours from "./../media/theworldisyours.jpg";
+import theworldisyours from "./../../media/theworldisyours.jpg";
 
 
 const BackGround = styled.div`
     position: relative;
     width: 100%;
     top: 1700px;
-    background-color: #00fffb;
+    background-color: #069d9a;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

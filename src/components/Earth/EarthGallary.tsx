@@ -12,7 +12,7 @@ const Body = styled.div`
     justify-items: center;
     align-items: center ;
     overflow-x: hidden;
-
+    z-index: 3;
     @media only screen and (min-device-width: 375px) and (max-device-width: 812px){
         grid-template-columns: repeat(2, 1fr); 
     }
