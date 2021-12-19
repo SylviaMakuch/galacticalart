@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import field from "./../media/field.svg";
-import caribeangirl from "./../media/caribeangirl.jpg";
-import artist from "./../media/artist.jpg";
+import field from "./../../media/field.svg";
+import caribeangirl from "./../../media/caribeangirl.jpg";
 import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
 import SpacePageI from './SpacePageI';
-import doublearrow from "./../media/doublearrow.svg";
+import doublearrow from "./../..//media/doublearrow.svg";
 import { Link } from 'react-router-dom';
 import Footer from '../Space/FooterSpace';
+import artist from "./../../media/artist.jpg";
 
 const BackDrop = styled.div`
     display: flex;

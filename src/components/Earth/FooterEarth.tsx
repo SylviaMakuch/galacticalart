@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import SocialTab from "./SocialTab";
+import SocialTab from "./../Space/SocialTab";
 import theworldisyours from "./../media/theworldisyours.jpg";
 
 

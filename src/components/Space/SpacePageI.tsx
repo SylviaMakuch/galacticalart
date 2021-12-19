@@ -1,19 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import stars from './../media/stars.svg';
-import spaceface from "./../media/spaceface.jpg";
-import funkyriver from "./../media/funkyriver.jpg"
-import octo from "./../media/octo.jpg";
-import retrowave from "./../media/retrowave.jpg";
-import orangesky from "./../media/orangesky.jpg";
-import mushrooms from "./../media/mushrooms.jpg";
-import rocketbro from "./../media/rocketbro.svg";
+import stars from './../../media/stars.svg';
+import spaceface from "./../../media/spaceface.jpg";
+import funkyriver from "./../../media/funkyriver.jpg"
+import octo from "./../../media/octo.jpg";
+import retrowave from "./../../media/retrowave.jpg";
+import orangesky from "./../../media/orangesky.jpg";
+import mushrooms from "./../../media/mushrooms.jpg";
+import rocketbro from "./../../media/rocketbro.svg";
 import { Link } from 'react-router-dom';
 
 const BackGround = styled.div`
     background-image: url(${stars});
-    height: 100%;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;

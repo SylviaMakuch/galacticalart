@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import twinklestar from "./../media/twinklestar.svg";
-import mountain from "./../media/mountain.png";
-import mountain2 from "./../media/mountain2.png";
-import moon from "./../media/moon.svg";
+import twinklestar from "./../../media/twinklestar.svg";
+import mountain from "./../../media/mountain.png";
+import mountain2 from "./../../media/mountain2.png";
+import moon from "./../../media/moon.svg";
 import { throttle } from "lodash";
 import EarthGallary from "./EarthGallary";
-import rocketbro from "./../media/rocketbro.svg";
+import rocketbro from "./../../media/rocketbro.svg";
 import { Link } from "react-router-dom";
 
 const Stars = styled.div`
@@ -16,7 +16,7 @@ const Stars = styled.div`
     background-position:center;
     width: 3000px;
     height: 4000px;
-    position: absolute;
+    /* position: absolute; */
     z-index: 0;
     overflow-x: hidden;
 `;

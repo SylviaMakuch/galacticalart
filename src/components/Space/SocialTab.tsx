@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import linkedin from "./../media/linkedin.svg";
-import twitter from "./../media/twitter.svg";
-import github from "./../media/github.svg"
+import linkedin from "./../../media/linkedin.svg";
+import twitter from "./../../media/twitter.svg";
+import github from "./../../media/github.svg"
 
 const socialIcons = [
     {
