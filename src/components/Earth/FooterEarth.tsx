@@ -23,10 +23,6 @@ const Text = styled.div`
     font-weight: 300;
 `;
 
-const Img = styled.img`
-    width: 800px;
-` ;  
-
 const LinkDiv = styled.div`
     display: flex;
     justify-content: center;

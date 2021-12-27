@@ -6,7 +6,6 @@ import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
 import SpacePageI from './SpacePageI';
 import doublearrow from "./../..//media/doublearrow.svg";
-import { Link } from 'react-router-dom';
 import Footer from '../Space/FooterSpace';
 import artist from "./../../media/artist.jpg";
 

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import ArtImage from "./ArtImg";
 import { earthData } from './configEarthGallary';
-import { Link } from 'react-router-dom';
 
 const Body = styled.div`
     width: 100%;

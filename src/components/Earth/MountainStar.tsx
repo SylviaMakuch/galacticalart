@@ -6,8 +6,6 @@ import mountain2 from "./../../media/mountain2.png";
 import moon from "./../../media/moon.svg";
 import { throttle } from "lodash";
 import EarthGallary from "./EarthGallary";
-import rocketbro from "./../../media/rocketbro.svg";
-import { Link } from "react-router-dom";
 import Footer from "./FooterEarth";
 
 const Stars = styled.div`
