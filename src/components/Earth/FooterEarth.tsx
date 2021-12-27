@@ -15,7 +15,7 @@ const BackGround = styled.div`
     align-items: center;
     height: 1200px;
     z-index: 3;
-    @media (max-width: 1620px){
+    @media (max-width: 1600px){
         top: 100px;
     }
 `;
