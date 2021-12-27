@@ -17,9 +17,15 @@ const Stars = styled.div`
     background-position:center;
     background-attachment: fixed;
     width: 100%;
-    height: 800vh;
-    z-index: 0;
+    height: 6000px;
+    z-index: -2;
     overflow-x: hidden;
+    @media(max-width: 1612px){
+        height: 8000px;
+    }
+     @media(max-width: 1000px){
+        height: 13000px;
+    }
 `;
 
 const Moon = styled.img<{ $offset: number }>`
@@ -28,7 +34,7 @@ const Moon = styled.img<{ $offset: number }>`
     display: block;
     position: absolute;
     left: 350px;
-    top: 60vh;
+    top: 800px;
     transform: translateY(${props => props.$offset * -0.3}px);
     transform: translateX(${props => props.$offset * 0.7}px);
 `;
@@ -57,8 +63,11 @@ const Welcome = styled.div <{ $offset: number }>`
     font-size: 300px;
     position: absolute;
     left: 350px;
-    top: 60vh;
+    top: 700px;
     z-index: 0.8;
+    @media(max-width: 1312px){
+        font-size: 150px;
+    }
 `;
 
 const VertTrans = styled.div <{ $offset: number }>`
@@ -70,25 +79,6 @@ const VertTrans = styled.div <{ $offset: number }>`
     display: flex;
     justify-items: center;
     align-items: center;
-`;
-
-const LinkDiv = styled.div`
-    display: flex;
-    justify-content: center;
-    margin: 30vh;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 37px;
-    margin: 10px;
-    z-index: 1;
-`;
-
-const LiftOff = styled.img`
-    height: 600px;
-    width: 600px;
-    justify-content: center;
 `;
 
 function MountainStar() {
@@ -107,17 +97,11 @@ function MountainStar() {
                 <Moon src={moon} $offset={offSetY} />
                 <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
                 <Mountain src={mountain} $offset={offSetY} />
+                <VertTrans $offset={offSetY}>
+                    <EarthGallary />
+                </VertTrans>
             </Stars>
-            <VertTrans $offset={offSetY}>
-                <EarthGallary />
-            </VertTrans>
             <Footer />
-            {/* <LinkDiv>
-                <h1>To the Moon! </h1>
-                <p>Click on the Image Below </p>
-                <Link to="/main">  <LiftOff src={rocketbro} />
-                </Link>
-            </LinkDiv> */}
         </>
     );
 }

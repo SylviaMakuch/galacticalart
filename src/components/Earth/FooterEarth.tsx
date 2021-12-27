@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import SocialTab from "./../Space/SocialTab";
-import theworldisyours from "./../../media/theworldisyours.jpg";
+import rocketbro from "./../../media/rocketbro.svg";
+import { Link } from "react-router-dom";
 
 
 const BackGround = styled.div`
-    position: relative;
     width: 100%;
     top: 1700px;
     background-color: #069d9a;
@@ -13,9 +13,9 @@ const BackGround = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 80vh;
+    height: 1200px;
     z-index: 3;
-    @media (max-width: 1600px){
+    @media (max-width: 1620px){
         top: 100px;
     }
 `;
@@ -31,10 +31,33 @@ const Img = styled.img`
     width: 800px;
 ` ;  
 
+const LinkDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 37px;
+    z-index: 2;
+`;
+
+const LiftOff = styled.img`
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+`;
+
 export default function Footer() {
     return (
         <BackGround >
-            <Img src={theworldisyours} />
+               <LinkDiv>
+                <h1>Back to Space? </h1>
+                <p>Click on the Image Below </p>
+                <Link to="/main">  <LiftOff src={rocketbro} />
+                </Link>
+            </LinkDiv>
             <Text> Thank you for coming to visit my Art Gallary !</Text>
             <SocialTab/>
             <Text> By: Sylvia Makuch</Text>
