@@ -12,7 +12,7 @@ const Body = styled.div`
     align-items: center ;
     overflow-x: hidden;
     z-index: 3;
-    @media(max-width: 1612px){
+    @media(max-width: 1300px){
         grid-template-columns: repeat(2, 1fr); 
     }
     @media(max-width: 1000px){

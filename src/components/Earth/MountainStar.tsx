@@ -20,7 +20,7 @@ const Stars = styled.div`
     height: 6000px;
     z-index: -2;
     overflow-x: hidden;
-    @media(max-width: 1612px){
+    @media(max-width: 1300px){
         height: 8000px;
     }
      @media(max-width: 1000px){
@@ -74,11 +74,14 @@ const VertTrans = styled.div <{ $offset: number }>`
     position: absolute;
     z-index: 3;
     top: 140vh;
-    left: 100px;
+    left: 400px;
     transform: translateY(${props => props.$offset * 0.2}px);
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    @media(max-width: 1812px){
+        left: 0px;
+    }
+    @media(max-width: 1000px){
+        left: 100px;
+    }
 `;
 
 function MountainStar() {

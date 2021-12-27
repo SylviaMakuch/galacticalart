@@ -4,7 +4,6 @@ import SocialTab from "./../Space/SocialTab";
 import rocketbro from "./../../media/rocketbro.svg";
 import { Link } from "react-router-dom";
 
-
 const BackGround = styled.div`
     width: 100%;
     top: 1700px;
@@ -15,10 +14,7 @@ const BackGround = styled.div`
     align-items: center;
     height: 1200px;
     z-index: 3;
-    @media (max-width: 1600px){
-        top: 100px;
-    }
-`;
+ `;
 
 const Text = styled.div`
     color: white;
