@@ -36,16 +36,6 @@ const CaribeanGirl = styled.img`
     margin: 5% 2% 0 0;
 `;
 
-// const Arrow = styled.img`
-//     height: 100px;
-//     width: 100px;
-//     position: absolute;
-//     top: 75vh;
-//     @media(max-width: 1300px){
-//         top: 110vh;
-//     }
-// `;
-
 const SocialDiv = styled.div`
     background-color: #ff00b77b;
     line-height: 7vh;
