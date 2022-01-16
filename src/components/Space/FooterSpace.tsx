@@ -3,7 +3,6 @@ import styled from "styled-components";
 import SocialTab from "./SocialTab";
 import theworldisyours from "./../../media/theworldisyours.jpg";
 
-
 const BackGround = styled.div`
     position: relative;
     width: 100%;

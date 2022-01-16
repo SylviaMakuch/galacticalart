@@ -1,11 +1,13 @@
 
 body {
+  display: contents;
   background-color: rgb(28, 24, 27);
 }; 
 
 .root{
   margin: 0;
-  display: flex;
-  height: 200vh;
+  /* display: flex; */
+  width: 3000px;
+  overflow-x: hidden;
   margin: 15%;
 }

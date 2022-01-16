@@ -15,8 +15,8 @@ const BackGround = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    width: 3000px;
-    height: 4000px;
+    width: 100%;
+    height: 3800px;
     position: absolute;
 `;
 
@@ -29,7 +29,7 @@ const MainDiv = styled.div`
     flex-direction: row;
     position: relative;
     margin-top: 100px;
-    @media and screen(max-width: 00px){
+    @media and screen(max-width: 800px){
         flex-direction: column;
         flex-wrap: nowrap;
     }
@@ -66,7 +66,7 @@ const RightContainer = styled.div`
 
 const LeftContainer = styled.div`
     display: flex;
-`; 
+`;
 
 const RightContainerTopDiv = styled.div`
     height: 100%;
@@ -106,9 +106,11 @@ const LinkDiv = styled.div`
     font-family: 'Roboto Mono', monospace;
     font-size: 37px;
     margin: 100px;
-    @media only screen and (max-device-width: 1200px){
+    margin-top: 100px;
+    @media only screen and (min-device-width: 1200px){
         position: relative;
-        top: 1000px;
+        top: 100px;
+        margin-bottom: 100px;
     } 
 `;
 
@@ -118,19 +120,18 @@ const LiftOff = styled.img`
     justify-content: center;
 `;
 
-export default function SpacePageI() {
+export default function SpacePage() {
     return (
         <>
             <BackGround></BackGround>
             <MainDiv>
                 <LeftContainer>
-                <VerticalPic src={octo} />
-                <LeftContainerRightDiv>
-                    <LeftPics src={spaceface} />
-                    <LeftPics src={funkyriver} />
-                </LeftContainerRightDiv>
+                    <VerticalPic src={octo} />
+                    <LeftContainerRightDiv>
+                        <LeftPics src={spaceface} />
+                        <LeftPics src={funkyriver} />
+                    </LeftContainerRightDiv>
                 </LeftContainer>
-
                 <RightContainer>
                     <RightContainerTopDiv>
                         <SmallPic src={orangesky} />
@@ -139,13 +140,13 @@ export default function SpacePageI() {
                     <HorizontalPic src={retrowave} />
                 </RightContainer>
                 <LinkDiv>
-                <h1>Hurry!</h1>
-                <h3>We are flying down to Earth! </h3>
-                <p>Click on the Image Below </p>
-                <Link to="/earth">  <LiftOff src={rocketbro} />
-                </Link>
-            </LinkDiv>
-            </MainDiv>  
+                    <h1>Hurry!</h1>
+                    <h3>We are flying down to Earth! </h3>
+                    <p>Click on the Image Below </p>
+                    <Link to="/earth">  <LiftOff src={rocketbro} />
+                    </Link>
+                </LinkDiv>
+            </MainDiv>
         </>
     );
-    }
+}

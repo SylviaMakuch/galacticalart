@@ -72,7 +72,7 @@ const VertTrans = styled.div <{ $offset: number }>`
     position: absolute;
     z-index: 3;
     top: 140vh;
-    left: 400px;
+    /* left: 400px; */
     transform: translateY(${props => props.$offset * 0.2}px);
     @media(max-width: 1812px){
         left: 0px;

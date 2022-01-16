@@ -4,7 +4,7 @@ import field from "./../../media/field.svg";
 import caribeangirl from "./../../media/caribeangirl.jpg";
 import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
-import SpacePageI from './SpacePageI';
+import SpacePage from './SpacePage';
 import doublearrow from "./../..//media/doublearrow.svg";
 import Footer from '../Space/FooterSpace';
 import artist from "./../../media/artist.jpg";
@@ -36,12 +36,15 @@ const CaribeanGirl = styled.img`
     margin: 5% 2% 0 0;
 `;
 
-const Yes = styled.img`
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    top: 75vh;
-`;
+// const Arrow = styled.img`
+//     height: 100px;
+//     width: 100px;
+//     position: absolute;
+//     top: 75vh;
+//     @media(max-width: 1300px){
+//         top: 110vh;
+//     }
+// `;
 
 const SocialDiv = styled.div`
     background-color: #ff00b77b;
@@ -92,11 +95,9 @@ function MainPage() {
                             delay: 75,
                         }}
                     />
-                    <Yes src={doublearrow} >
-                    </Yes>
                 </TextDiv>
             </BackDrop>
-            <SpacePageI />
+            <SpacePage />
             <Footer/>
         </div>
     );

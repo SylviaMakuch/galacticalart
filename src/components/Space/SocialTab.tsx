@@ -45,7 +45,6 @@ const SocialsIcons = styled.img`
                     </a>
                 )
                 })}
-        
         </SocialsGrid>
     );
 };

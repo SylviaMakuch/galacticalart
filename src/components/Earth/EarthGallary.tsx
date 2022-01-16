@@ -4,19 +4,13 @@ import ArtImage from "./ArtImg";
 import { earthData } from './configEarthGallary';
 
 const Body = styled.div`
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    display: flex;
+    flex-wrap: wrap;
     justify-items: center;
     align-items: center ;
     overflow-x: hidden;
-    z-index: 3;
-    @media(max-width: 1300px){
-        grid-template-columns: repeat(2, 1fr); 
-    }
-    @media(max-width: 1000px){
-        grid-template-columns: repeat(1, 1fr); 
-    }
+    overflow-y: hidden;
+    z-index: 3; 
 `; 
 
 export default function EarthGallary() {
