@@ -22,9 +22,9 @@ const BackGround = styled.div`
 
 const MainDiv = styled.div`
     height: 80vh;
-    justify-content: center;
+      justify-content: center;
     display: flex;
-    align-content: flex-start;
+    align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
@@ -115,7 +115,7 @@ const LinkDiv = styled.div`
 `;
 
 const LiftOff = styled.img`
-    height: 600px;
+    height: 00px;
     width: 600px;
     justify-content: center;
 `;
@@ -139,14 +139,14 @@ export default function SpacePage() {
                     </RightContainerTopDiv>
                     <HorizontalPic src={retrowave} />
                 </RightContainer>
-                <LinkDiv>
+            </MainDiv>
+            <LinkDiv>
                     <h1>Hurry!</h1>
                     <h3>We are flying down to Earth! </h3>
                     <p>Click on the Image Below </p>
                     <Link to="/earth">  <LiftOff src={rocketbro} />
                     </Link>
                 </LinkDiv>
-            </MainDiv>
         </>
     );
 }

@@ -37,6 +37,7 @@ const Layers = styled.div`
 	width: 100%;
 	display: flex;
 	position: absolute;
+	background-color: black;
 `;
 
 const BaseLayer = styled.div<{ $isOpen: boolean }>`
@@ -86,14 +87,14 @@ const BtnText = styled.a`
 	text-underline-position: under;	
 `;
 
-const Gal = styled.div`
+const Question = styled.div`
 	font-family: 'Montserrat', sans-serif;
 	font-family: monospace;
 	font-size: 4vh;
 	color: white;
 	text-align: center;
 	letter-spacing: 2px;
-	animation: ${titleMove} 7s linear;
+	animation: ${titleMove} 5s linear;
 `
 
 export default function EnterAnimation() {
@@ -103,7 +104,7 @@ export default function EnterAnimation() {
 		<Layers>
 			<Layer1 $isOpen={isAnimationOpen} />
 			<Layer2 $isOpen={isAnimationOpen}>
-				{isAnimationOpen && <Gal onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Gal>}
+				{isAnimationOpen && <Question onClick={() => setIsAnimationOpen(false)}>You are Entering the Galatic Emporium </Question>}
 				{isAnimationOpen && <BtnLetsGo onClick={() => setIsAnimationOpen(false)}><Link to="/main"><BtnText>I am Ready</BtnText> </Link>
 				</BtnLetsGo>}
 			</Layer2>
