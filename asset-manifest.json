@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/galacticalart/static/css/main.8b49e99c.chunk.css",
-    "main.js": "/galacticalart/static/js/main.e7c7f556.chunk.js",
-    "main.js.map": "/galacticalart/static/js/main.e7c7f556.chunk.js.map",
+    "main.js": "/galacticalart/static/js/main.c5ceb71f.chunk.js",
+    "main.js.map": "/galacticalart/static/js/main.c5ceb71f.chunk.js.map",
     "runtime-main.js": "/galacticalart/static/js/runtime-main.42d5ba9b.js",
     "runtime-main.js.map": "/galacticalart/static/js/runtime-main.42d5ba9b.js.map",
     "static/js/2.f5a254f4.chunk.js": "/galacticalart/static/js/2.f5a254f4.chunk.js",
@@ -48,6 +48,6 @@
     "static/js/runtime-main.42d5ba9b.js",
     "static/js/2.f5a254f4.chunk.js",
     "static/css/main.8b49e99c.chunk.css",
-    "static/js/main.e7c7f556.chunk.js"
+    "static/js/main.c5ceb71f.chunk.js"
   ]
 }
