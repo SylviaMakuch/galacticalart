@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/galacticalart/static/css/main.f00d56f0.chunk.css",
-    "main.js": "/galacticalart/static/js/main.403ca6a9.chunk.js",
-    "main.js.map": "/galacticalart/static/js/main.403ca6a9.chunk.js.map",
+    "main.css": "/galacticalart/static/css/main.8b49e99c.chunk.css",
+    "main.js": "/galacticalart/static/js/main.e7c7f556.chunk.js",
+    "main.js.map": "/galacticalart/static/js/main.e7c7f556.chunk.js.map",
     "runtime-main.js": "/galacticalart/static/js/runtime-main.42d5ba9b.js",
     "runtime-main.js.map": "/galacticalart/static/js/runtime-main.42d5ba9b.js.map",
     "static/js/2.f5a254f4.chunk.js": "/galacticalart/static/js/2.f5a254f4.chunk.js",
     "static/js/2.f5a254f4.chunk.js.map": "/galacticalart/static/js/2.f5a254f4.chunk.js.map",
     "index.html": "/galacticalart/index.html",
-    "static/css/main.f00d56f0.chunk.css.map": "/galacticalart/static/css/main.f00d56f0.chunk.css.map",
+    "static/css/main.8b49e99c.chunk.css.map": "/galacticalart/static/css/main.8b49e99c.chunk.css.map",
     "static/js/2.f5a254f4.chunk.js.LICENSE.txt": "/galacticalart/static/js/2.f5a254f4.chunk.js.LICENSE.txt",
     "static/media/artist.2dfd03b4.jpg": "/galacticalart/static/media/artist.2dfd03b4.jpg",
     "static/media/beach.f425526e.jpg": "/galacticalart/static/media/beach.f425526e.jpg",
@@ -16,7 +16,6 @@
     "static/media/caribeangirl.73502b76.jpg": "/galacticalart/static/media/caribeangirl.73502b76.jpg",
     "static/media/cupcakeeater.a9d6e6e1.jpg": "/galacticalart/static/media/cupcakeeater.a9d6e6e1.jpg",
     "static/media/cutecouple.02e7f723.png": "/galacticalart/static/media/cutecouple.02e7f723.png",
-    "static/media/doublearrow.105eeaf7.svg": "/galacticalart/static/media/doublearrow.105eeaf7.svg",
     "static/media/fairy.a6e3bfb3.jpg": "/galacticalart/static/media/fairy.a6e3bfb3.jpg",
     "static/media/field.65317f79.svg": "/galacticalart/static/media/field.65317f79.svg",
     "static/media/funkyriver.da29b0bb.jpg": "/galacticalart/static/media/funkyriver.da29b0bb.jpg",
@@ -48,7 +47,7 @@
   "entrypoints": [
     "static/js/runtime-main.42d5ba9b.js",
     "static/js/2.f5a254f4.chunk.js",
-    "static/css/main.f00d56f0.chunk.css",
-    "static/js/main.403ca6a9.chunk.js"
+    "static/css/main.8b49e99c.chunk.css",
+    "static/js/main.e7c7f556.chunk.js"
   ]
 }
