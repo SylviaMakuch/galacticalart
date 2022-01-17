@@ -8,6 +8,7 @@ import { throttle } from "lodash";
 import EarthGallary from "./EarthGallary";
 import Footer from "./FooterEarth";
 
+
 const Stars = styled.div`
     background-image: url(${twinklestar});
     background-repeat: repeat;
@@ -15,14 +16,14 @@ const Stars = styled.div`
     background-position:center;
     background-attachment: fixed;
     width: 100%;
-    height: 6000px;
+    height: 8000px;
     z-index: -2;
     overflow-x: hidden;
-    @media(max-width: 1300px){
-        height: 8000px;
+    @media(max-width: 1700px){
+        height: 9000px;
     }
-     @media(max-width: 1000px){
-        height: 13000px;
+     @media(max-width: 11350px){
+        height: 15000px;
     }
 `;
 
@@ -99,7 +100,7 @@ function MountainStar() {
                 <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
                 <Mountain src={mountain} $offset={offSetY} />
                 <VertTrans $offset={offSetY}>
-                    <EarthGallary />
+                    <EarthGallary /> 
                 </VertTrans>
             </Stars>
             <Footer />

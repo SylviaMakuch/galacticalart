@@ -12,7 +12,10 @@ import lollilick from "./../../media/lollilick.jpg";
 import ownmegirl from "./../../media/ownmegirl.jpg";
 import purplehair from "./../../media/purplehair.jpg";
 import reddress from "./../../media/reddress.jpg";
-import beach from "./../../media/beach.jpg"
+import beach from "./../../media/beach.jpg";
+import christmasgirl from "./../../media/christmasgirl.jpg";
+import puppy from "./../../media/puppy.jpg";
+import mushroom from "./../../media/mushroom.jpg";
 
 export const earthData = [
     {
@@ -25,10 +28,16 @@ export const earthData = [
         image: beach
     },
     {
+        image: christmasgirl
+    },
+    {
         image: pirateboat
     },
     {
         image: northenlights
+    },
+    {
+        image: mushroom
     },
     {
         image: reddress
@@ -50,6 +59,9 @@ export const earthData = [
     },
     {
         image: ginger
+    },
+    {
+        image: puppy
     },
     {
         image: cutecouple
