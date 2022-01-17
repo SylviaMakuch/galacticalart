@@ -69,7 +69,7 @@ display: block;
 
 function MainPage() {
     return (
-        <div>
+        <>
             <BackDrop>
                 <CaribeanGirl src={caribeangirl} />
                 <SocialDiv> Sylvia Makuch
@@ -89,7 +89,7 @@ function MainPage() {
             </BackDrop>
             <SpacePage />
             <Footer/>
-        </div>
+        </>
     );
 }
 export default MainPage;
