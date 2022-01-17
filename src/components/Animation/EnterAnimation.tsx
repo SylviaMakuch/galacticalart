@@ -94,7 +94,7 @@ const Question = styled.div`
 	color: white;
 	text-align: center;
 	letter-spacing: 2px;
-	animation: ${titleMove} 5s linear;
+	animation: ${titleMove} 4s linear;
 `
 
 export default function EnterAnimation() {
