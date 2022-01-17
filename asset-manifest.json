@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/galacticalart/static/css/main.8b49e99c.chunk.css",
-    "main.js": "/galacticalart/static/js/main.c5ceb71f.chunk.js",
-    "main.js.map": "/galacticalart/static/js/main.c5ceb71f.chunk.js.map",
+    "main.js": "/galacticalart/static/js/main.772ef115.chunk.js",
+    "main.js.map": "/galacticalart/static/js/main.772ef115.chunk.js.map",
     "runtime-main.js": "/galacticalart/static/js/runtime-main.42d5ba9b.js",
     "runtime-main.js.map": "/galacticalart/static/js/runtime-main.42d5ba9b.js.map",
     "static/js/2.f5a254f4.chunk.js": "/galacticalart/static/js/2.f5a254f4.chunk.js",
@@ -14,6 +14,7 @@
     "static/media/beach.f425526e.jpg": "/galacticalart/static/media/beach.f425526e.jpg",
     "static/media/blondie.798cbd6b.jpg": "/galacticalart/static/media/blondie.798cbd6b.jpg",
     "static/media/caribeangirl.73502b76.jpg": "/galacticalart/static/media/caribeangirl.73502b76.jpg",
+    "static/media/christmasgirl.df8c9aa7.jpg": "/galacticalart/static/media/christmasgirl.df8c9aa7.jpg",
     "static/media/cupcakeeater.a9d6e6e1.jpg": "/galacticalart/static/media/cupcakeeater.a9d6e6e1.jpg",
     "static/media/cutecouple.02e7f723.png": "/galacticalart/static/media/cutecouple.02e7f723.png",
     "static/media/fairy.a6e3bfb3.jpg": "/galacticalart/static/media/fairy.a6e3bfb3.jpg",
@@ -26,12 +27,14 @@
     "static/media/moon.97c25379.svg": "/galacticalart/static/media/moon.97c25379.svg",
     "static/media/mountain.16c94bd1.png": "/galacticalart/static/media/mountain.16c94bd1.png",
     "static/media/mountain2.ea751065.png": "/galacticalart/static/media/mountain2.ea751065.png",
+    "static/media/mushroom.7d21600a.jpg": "/galacticalart/static/media/mushroom.7d21600a.jpg",
     "static/media/mushrooms.bb41237d.jpg": "/galacticalart/static/media/mushrooms.bb41237d.jpg",
     "static/media/northenlights.9ae13d56.jpg": "/galacticalart/static/media/northenlights.9ae13d56.jpg",
     "static/media/octo.6ed3337f.jpg": "/galacticalart/static/media/octo.6ed3337f.jpg",
     "static/media/orangesky.722aeeb9.jpg": "/galacticalart/static/media/orangesky.722aeeb9.jpg",
     "static/media/ownmegirl.a269e122.jpg": "/galacticalart/static/media/ownmegirl.a269e122.jpg",
     "static/media/pirateboat.66181038.jpg": "/galacticalart/static/media/pirateboat.66181038.jpg",
+    "static/media/puppy.3cb54187.jpg": "/galacticalart/static/media/puppy.3cb54187.jpg",
     "static/media/purplehair.14d1e333.jpg": "/galacticalart/static/media/purplehair.14d1e333.jpg",
     "static/media/reddress.30a66068.jpg": "/galacticalart/static/media/reddress.30a66068.jpg",
     "static/media/retrowave.9202b28f.jpg": "/galacticalart/static/media/retrowave.9202b28f.jpg",
@@ -48,6 +51,6 @@
     "static/js/runtime-main.42d5ba9b.js",
     "static/js/2.f5a254f4.chunk.js",
     "static/css/main.8b49e99c.chunk.css",
-    "static/js/main.c5ceb71f.chunk.js"
+    "static/js/main.772ef115.chunk.js"
   ]
 }
