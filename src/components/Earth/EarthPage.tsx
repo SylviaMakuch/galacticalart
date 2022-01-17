@@ -4,7 +4,7 @@ import twinklestar from "./../../media/twinklestar.svg";
 import mountain from "./../../media/mountain.png";
 import mountain2 from "./../../media/mountain2.png";
 import moon from "./../../media/moon.svg";
-import { throttle } from "lodash";
+import { debounce, throttle } from "lodash";
 import EarthGallary from "./EarthGallary";
 import Footer from "./FooterEarth";
 
@@ -16,13 +16,14 @@ const Stars = styled.div`
     background-position:center;
     background-attachment: fixed;
     width: 100%;
-    height: 8000px;
+    height: 7000px;
     z-index: -2;
     overflow-x: hidden;
-    @media(max-width: 1700px){
+    
+    @media(max-width: 1800px){
         height: 9000px;
     }
-     @media(max-width: 11350px){
+    @media(max-width: 1250px){
         height: 15000px;
     }
 `;
@@ -73,14 +74,14 @@ const VertTrans = styled.div <{ $offset: number }>`
     position: absolute;
     z-index: 3;
     top: 140vh;
-    /* left: 400px; */
+    left: 8%;
     transform: translateY(${props => props.$offset * 0.2}px);
-    @media(max-width: 1812px){
+    /* @media(max-width: 1812px){
         left: 0px;
     }
     @media(max-width: 1000px){
         left: 100px;
-    }
+    } */
 `;
 
 function MountainStar() {
@@ -88,7 +89,7 @@ function MountainStar() {
     const handlescroll = () => setOffSetY(window.pageYOffset);
 
     useEffect(() => {
-        window.addEventListener('scroll', throttle(handlescroll, 0));
+        window.addEventListener('scroll', throttle(handlescroll, 1));
         return () => window.removeEventListener('scroll', handlescroll);
     }, []);
 
@@ -100,12 +101,11 @@ function MountainStar() {
                 <Welcome $offset={offSetY}> Welcome to Earth </Welcome>
                 <Mountain src={mountain} $offset={offSetY} />
                 <VertTrans $offset={offSetY}>
-                    <EarthGallary /> 
+                    <EarthGallary />
                 </VertTrans>
             </Stars>
             <Footer />
         </>
     );
 }
-
 export default MountainStar;
