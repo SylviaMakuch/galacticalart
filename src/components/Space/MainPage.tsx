@@ -5,9 +5,9 @@ import caribeangirl from "./../../media/caribeangirl.jpg";
 import Typewriter from 'typewriter-effect';
 import SocialTab from './SocialTab';
 import SpacePage from './SpacePage';
-import doublearrow from "./../..//media/doublearrow.svg";
 import Footer from '../Space/FooterSpace';
 import artist from "./../../media/artist.jpg";
+import arrowsvg from "../../media/arrow.svg"
 
 const BackDrop = styled.div`
     display: flex;
@@ -17,6 +17,9 @@ const BackDrop = styled.div`
     background-image: url(${field});
     justify-content: center;
     align-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
 `;
 
 const UpperRow = styled.div`
@@ -57,7 +60,7 @@ const TextDiv = styled.div`
 display: block;
     background-color: #000000a7;
     height: 25vh;
-    width: 98vh;
+    width: 930px;
     margin: 5%;
     color: white;
     font-size: 100px;
@@ -68,6 +71,13 @@ display: block;
         padding: 5px;
         }
 `;
+
+
+const Arrow = styled.img`
+    position: absolute;
+    left: 44%;
+    top: 85%;
+`
 
 function MainPage() {
     return (
@@ -90,6 +100,7 @@ function MainPage() {
                         }}
                     />
                 </TextDiv>
+                <Arrow src={arrowsvg} />
             </BackDrop>
             <SpacePage />
             <Footer />

@@ -10,7 +10,7 @@ const BackGround = styled.div`
     background-color: #ec5df3;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 80vh;
     @media (max-width: 1600px){
@@ -21,19 +21,19 @@ const BackGround = styled.div`
 const Text = styled.div`
     color: white;
     font-family: 'Work Sans', sans-serif;
-    font-size: 25px;
+    font-size: 32px;
     font-weight: 300;
 `;
 
 const Img = styled.img`
-    width: 800px;
+    width: 600px;
 ` ;  
 
 export default function Footer() {
     return (
         <BackGround >
-            <Img src={theworldisyours} />
             <Text> Thank you for coming to visit my Art Gallary !</Text>
+            <Img src={theworldisyours} />
             <SocialTab/>
             <Text> By: Sylvia Makuch</Text>
         </BackGround>
