@@ -12,15 +12,17 @@ import artist from "./../../media/artist.jpg";
 const BackDrop = styled.div`
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
     background-size: cover;
     background-image: url(${field});
     justify-content: center;
-    @media (max-width: 900px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+    align-content: center;
+`;
+
+const UpperRow = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const ProfilePic = styled.img`
@@ -71,11 +73,13 @@ function MainPage() {
     return (
         <>
             <BackDrop>
-                <CaribeanGirl src={caribeangirl} />
-                <SocialDiv> Sylvia Makuch
-                    <ProfilePic src={artist} />
-                    <SocialTab />
-                </SocialDiv>
+                <UpperRow>
+                    <CaribeanGirl src={caribeangirl} />
+                    <SocialDiv> Sylvia Makuch
+                        <ProfilePic src={artist} />
+                        <SocialTab />
+                    </SocialDiv>
+                </UpperRow>
                 <TextDiv>
                     <Typewriter
                         options={{
@@ -88,7 +92,7 @@ function MainPage() {
                 </TextDiv>
             </BackDrop>
             <SpacePage />
-            <Footer/>
+            <Footer />
         </>
     );
 }

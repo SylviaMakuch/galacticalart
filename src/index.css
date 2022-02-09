@@ -1,13 +1,13 @@
 
 body {
-  display: contents;
-  background-color: rgb(28, 24, 27);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
 }; 
 
 .root{
-  margin: 0;
-  /* display: flex; */
-  width: 3000px;
+  overflow-y: hidden;
   overflow-x: hidden;
-  margin: 15%;
-}
+};
