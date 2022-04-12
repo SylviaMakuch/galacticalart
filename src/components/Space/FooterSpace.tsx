@@ -23,6 +23,7 @@ const Text = styled.div`
     font-family: 'Work Sans', sans-serif;
     font-size: 32px;
     font-weight: 300;
+    margin: 10px;
 `;
 
 const Img = styled.img`
