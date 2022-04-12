@@ -18,7 +18,7 @@ const BackGround = styled.div`
     }
 `;
 
-const Text = styled.div`
+const Text = styled.div`  
     color: white;
     font-family: 'Work Sans', sans-serif;
     font-size: 32px;
