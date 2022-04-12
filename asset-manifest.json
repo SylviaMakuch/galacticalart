@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/galacticalart/static/css/main.8b49e99c.chunk.css",
-    "main.js": "/galacticalart/static/js/main.0af92454.chunk.js",
-    "main.js.map": "/galacticalart/static/js/main.0af92454.chunk.js.map",
+    "main.css": "/galacticalart/static/css/main.e45a3250.chunk.css",
+    "main.js": "/galacticalart/static/js/main.bfa56da5.chunk.js",
+    "main.js.map": "/galacticalart/static/js/main.bfa56da5.chunk.js.map",
     "runtime-main.js": "/galacticalart/static/js/runtime-main.42d5ba9b.js",
     "runtime-main.js.map": "/galacticalart/static/js/runtime-main.42d5ba9b.js.map",
     "static/js/2.f5a254f4.chunk.js": "/galacticalart/static/js/2.f5a254f4.chunk.js",
     "static/js/2.f5a254f4.chunk.js.map": "/galacticalart/static/js/2.f5a254f4.chunk.js.map",
     "index.html": "/galacticalart/index.html",
-    "static/css/main.8b49e99c.chunk.css.map": "/galacticalart/static/css/main.8b49e99c.chunk.css.map",
+    "static/css/main.e45a3250.chunk.css.map": "/galacticalart/static/css/main.e45a3250.chunk.css.map",
     "static/js/2.f5a254f4.chunk.js.LICENSE.txt": "/galacticalart/static/js/2.f5a254f4.chunk.js.LICENSE.txt",
     "static/media/artist.2dfd03b4.jpg": "/galacticalart/static/media/artist.2dfd03b4.jpg",
     "static/media/beach.f425526e.jpg": "/galacticalart/static/media/beach.f425526e.jpg",
@@ -50,7 +50,7 @@
   "entrypoints": [
     "static/js/runtime-main.42d5ba9b.js",
     "static/js/2.f5a254f4.chunk.js",
-    "static/css/main.8b49e99c.chunk.css",
-    "static/js/main.0af92454.chunk.js"
+    "static/css/main.e45a3250.chunk.css",
+    "static/js/main.bfa56da5.chunk.js"
   ]
 }
