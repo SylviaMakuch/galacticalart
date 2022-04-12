@@ -13,8 +13,8 @@ const BackGround = styled.div`
     justify-content: center;
     align-items: center;
     height: 80vh;
-    @media (max-width: 1600px){
-        top: 2500px;
+    @media (max-width: 1880px){
+        top: 2400px;
     }
 `;
 

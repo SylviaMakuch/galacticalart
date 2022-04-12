@@ -9,13 +9,8 @@ import Footer from '../Space/FooterSpace';
 import artist from "./../../media/artist.jpg";
 
 const BackDrop = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     background-size: cover;
     background-image: url(${field});
-    justify-content: center;
-    align-content: center;
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
@@ -26,6 +21,9 @@ const UpperRow = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    @media (max-width: 1100px){
+        flex-direction: column;
+    }
 `;
 
 const ProfilePic = styled.img`
@@ -36,8 +34,8 @@ const ProfilePic = styled.img`
 `;
 
 const CaribeanGirl = styled.img`
-    height: 350px;
-    width: 350px;
+    height: 450px;
+    width: 450px;
     margin: 50px;
 `;
 
@@ -46,6 +44,7 @@ const SocialDiv = styled.div`
     line-height: 7vh;
     height: 350px;
     width: 350px;
+    padding: 50px;
     margin: 50px;
     color: white;
     font-size: 50px;
@@ -63,6 +62,7 @@ const TextDiv = styled.div`
 display: block;
     background-color: #000000a7;
     width: 1000px;
+    height: 300px;
     margin: 5%;
     color: white;
     font-size: 80px;
@@ -70,17 +70,27 @@ display: block;
     padding: 50px;
     @media (max-width: 1200px){
         height: 17vh;
-        font-size: 50px;
+        font-size: 60px;
         padding: 50px;
+        width: 80%;
         }
 `;
 
+const PageDiv = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 100px;
+`
 
 
 export default function Hero() {
     return (
         <>
             <BackDrop>
+                <PageDiv>
                 <UpperRow>
                     <CaribeanGirl src={caribeangirl} />
                     <SocialDiv> Sylvia Makuch
@@ -98,7 +108,7 @@ export default function Hero() {
                         }}
                     />
                 </TextDiv>
-
+            </PageDiv>
             </BackDrop>
             <SpacePage />
             <Footer />

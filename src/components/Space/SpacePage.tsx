@@ -15,7 +15,7 @@ const BackGround = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    width: 120%;
+    width: 200%;
     height: 3647px;
     position: absolute;
 `;
