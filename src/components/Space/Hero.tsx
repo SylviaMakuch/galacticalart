@@ -7,7 +7,6 @@ import SocialTab from './SocialTab';
 import SpacePage from './SpacePage';
 import Footer from '../Space/FooterSpace';
 import artist from "./../../media/artist.jpg";
-import arrowsvg from "../../media/arrow.svg"
 
 const BackDrop = styled.div`
     display: flex;
@@ -26,60 +25,59 @@ const UpperRow = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 `;
 
 const ProfilePic = styled.img`
-    height: 20vh;
+    height: 150px;
     border-radius: 50%;
     padding: 6px;
     border: 5px solid white;
 `;
 
 const CaribeanGirl = styled.img`
-    height: 40vh;
-    width: 40vh;
-    margin: 5% 2% 0 0;
+    height: 350px;
+    width: 350px;
+    margin: 50px;
 `;
 
 const SocialDiv = styled.div`
     background-color: #ff00b77b;
     line-height: 7vh;
-    height: 40vh;
-    width: 40vh;
-    margin: 5% 1% 0 0;
+    height: 350px;
+    width: 350px;
+    margin: 50px;
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     display: grid;
     align-content: end;
     justify-content: center;
     justify-items: center;
     align-content: space-between;
+    @media(max-width: 900px){
+        font-size: 40px;
+    }
 `;
 
 const TextDiv = styled.div`
 display: block;
     background-color: #000000a7;
-    height: 25vh;
-    width: 930px;
+    width: 1000px;
     margin: 5%;
     color: white;
-    font-size: 100px;
+    font-size: 80px;
     text-align: center;
+    padding: 50px;
     @media (max-width: 1200px){
         height: 17vh;
-        font-size: 70px;
-        padding: 5px;
+        font-size: 50px;
+        padding: 50px;
         }
 `;
 
 
-const Arrow = styled.img`
-    position: absolute;
-    left: 44%;
-    top: 85%;
-`
 
-function MainPage() {
+export default function Hero() {
     return (
         <>
             <BackDrop>
@@ -100,11 +98,10 @@ function MainPage() {
                         }}
                     />
                 </TextDiv>
-                <Arrow src={arrowsvg} />
+
             </BackDrop>
             <SpacePage />
             <Footer />
         </>
     );
 }
-export default MainPage;

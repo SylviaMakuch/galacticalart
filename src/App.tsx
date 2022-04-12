@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import MainPage from "./components/Space/MainPage";
+import Hero from "./components/Space/Hero";
 import EnterAnimation from "./components/Animation/EnterAnimation";
 import MountainStar from "./components/Earth/EarthPage";
 import SpacePage from "./components/Space/SpacePage";
@@ -14,7 +14,7 @@ function App() {
                 <ScrollToTop />
                 <Routes>
                     <Route path="/galacticalart" element={<EnterAnimation />} />
-                    <Route path="/main" element={<MainPage />} />
+                    <Route path="/main" element={<Hero />} />
                     <Route path="/space" element={<SpacePage />} />
                     <Route path="/earth" element={<MountainStar />} />
                     <Route path="/earthgallary" element={<EarthGallary />} />
