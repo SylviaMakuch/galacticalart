@@ -51,15 +51,14 @@ const BaseLayer = styled.div<{ $isOpen: boolean }>`
 const Layer1 = styled(BaseLayer)`
 	background: #e40909;
 	animation: ${props => props.$isOpen ? moveIn : moveOut} 1.5s ease-in-out;
-	
 `;
 
 const Layer2 = styled(BaseLayer)`
 	background-image: url(${stars});
 	animation: ${props => props.$isOpen ? moveIn : moveOut} 1.5s  ease-in-out;
-	animation-delay: 0.1s;
+	animation-delay: 0.05s;
 	flex-direction: column;;
-`
+`;
 
 const Layer3 = styled(BaseLayer)`
 	background: #e99c9cfb;
@@ -94,8 +93,8 @@ const Question = styled.div`
 	color: white;
 	text-align: center;
 	letter-spacing: 2px;
-	animation: ${titleMove} 4s linear;
-`
+	animation: ${titleMove} 2s linear;
+`;
 
 export default function EnterAnimation() {
 	const [isAnimationOpen, setIsAnimationOpen] = useState(true);

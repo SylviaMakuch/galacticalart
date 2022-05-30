@@ -11,13 +11,13 @@ import rocketbro from "./../../media/rocketbro.svg";
 import { Link } from 'react-router-dom';
 
 const BackGround = styled.div`
-    background-image: url(${stars});
+    /* background-image: url(${stars});
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
     width: 200%;
     height: 3647px;
-    position: absolute;
+    position: absolute; */
 `;
 
 const MainDiv = styled.div`
@@ -48,7 +48,7 @@ const LeftPics = styled.img`
 `;
 
 const VerticalPic = styled.img`
-    height: 97%;
+    height: 95%;
     width: 29vh;
     padding: 5px;
     margin: 10px;
