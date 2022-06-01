@@ -13,6 +13,8 @@ const PageDiv = styled.div`
   height: 100vh;
   overflow-x: hidden;
   background-image: url(${field});
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 const UpperRow = styled.div`
@@ -60,18 +62,14 @@ const SocialDiv = styled.div`
 const TextDiv = styled.div`
   display: block;
   background-color: #000000a7;
-  width: 1000px;
-  height: 300px;
   margin: 5%;
   color: white;
   font-size: 80px;
   text-align: center;
   padding: 50px;
   @media (max-width: 1200px) {
-    height: 17vh;
     font-size: 60px;
     padding: 50px;
-    width: 80%;
   }
 `;
 
@@ -81,6 +79,7 @@ const InnerDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
   margin: 100px;
 `;
 
@@ -108,8 +107,6 @@ export default function Hero() {
             />
           </TextDiv>
         </InnerDiv>
-      {/* <SpacePage />
-      <Footer /> */}
     </PageDiv>
   );
 }
