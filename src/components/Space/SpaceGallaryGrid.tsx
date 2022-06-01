@@ -42,7 +42,7 @@ const GridDiv = styled.div`
     height: 150em;
   }
   @media (max-width: 1100px) {
-    height: 120em;
+    height: 110em;
   }
   @media (max-width: 1000px) {
     height: 110em;

@@ -9,11 +9,11 @@ import artist from "./../../media/artist.jpg";
 import stars from './../../media/stars.svg';
 
 const PageDiv = styled.div`
-  height: 100vh;
   overflow-x: hidden;
   background-image: url(${field});
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 `;
 
 const UpperRow = styled.div`
@@ -21,7 +21,6 @@ const UpperRow = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  overflow-y: hidden;
   @media (max-width: 1100px) {
     flex-direction: column;
   }

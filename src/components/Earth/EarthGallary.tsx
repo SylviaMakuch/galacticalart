@@ -6,6 +6,7 @@ import { earthData } from './configEarthGallary';
 const Body = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     justify-items: center;
     align-items: center ;
     overflow-x: hidden;

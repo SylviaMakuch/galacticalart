@@ -13,7 +13,7 @@ const socialIcons = [
     {
         key: "linkedin",
         icon: linkedin,
-        url: "https://www.linkedin.com/in/sylvia-makuch-6baa4a66/"
+        url: "https://www.linkedin.com/in/sylvia-makuch-21007923a/"
     },
     {
         key: "github",
