@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Hero from "./Hero";
 import SpaceGallary from "./SpaceGallaryGrid";
 import Footer from "./FooterSpace";
-import TakeOffRocket from "./TakeOffRocket";
 
 const PageDiv = styled.div`
     display: flex;
@@ -15,6 +14,7 @@ export default function SpacePage() {
         <PageDiv>
             <Hero />
             <SpaceGallary />
+            <Footer /> 
         </PageDiv>
     );
 }

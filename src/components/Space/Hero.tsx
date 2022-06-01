@@ -4,7 +4,6 @@ import field from "./../../media/field.svg";
 import caribeangirl from "./../../media/caribeangirl.jpg";
 import Typewriter from "typewriter-effect";
 import SocialTab from "./SocialTab";
-import SpacePage from "./SpaceGallary";
 import Footer from "../Space/FooterSpace";
 import artist from "./../../media/artist.jpg";
 import stars from './../../media/stars.svg';
@@ -22,6 +21,7 @@ const UpperRow = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  overflow-y: hidden;
   @media (max-width: 1100px) {
     flex-direction: column;
   }
