@@ -1,153 +1,116 @@
-import React from 'react';
-import styled from 'styled-components';
-import stars from './../../media/stars.svg';
+import React from "react";
+import styled from "styled-components";
+import stars from "./../../media/stars.svg";
 import spaceface from "./../../media/spaceface.jpg";
-import funkyriver from "./../../media/funkyriver.jpg"
+import funkyriver from "./../../media/funkyriver.jpg";
 import octo from "./../../media/octo.jpg";
 import retrowave from "./../../media/retrowave.jpg";
 import orangesky from "./../../media/orangesky.jpg";
 import mushrooms from "./../../media/mushrooms.jpg";
-import rocketbro from "./../../media/rocketbro.svg";
-import { Link } from 'react-router-dom';
+import TakeOffRocket from "./TakeOffRocket";
+
+const PageDiv = styled.div`
+    display: flex;
+    flex-direction: column; 
+`;
 
 const BackGround = styled.div`
-    /* background-image: url(${stars});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    width: 200%;
-    height: 3647px;
-    position: absolute; */
+  background: url(${stars}) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  x-index: -1;
 `;
 
-const MainDiv = styled.div`
-    height: 80vh;
-    justify-content: center;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: relative;
-    margin-top: 100px;
-    align-content: space-between;
-    margin: 100px;  
-`;
-
-const LeftContainerRightDiv = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-`;
-
-const LeftPics = styled.img`
-    height: 100%;
-    width: 28vh;
-    margin: 10px;
-    padding: 5px;
-    border: 4px solid #ff00d9;
-`;
-
-const VerticalPic = styled.img`
-    height: 95%;
-    width: 29vh;
-    padding: 5px;
-    margin: 10px;
-    border: 4px solid #ff00d9;
-`;
-
-const RightContainer = styled.div`
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+const GalleryDiv = styled.div`
+  height: 866px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 80px;
 `;
 
 const LeftContainer = styled.div`
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+`;
+
+const LeftContainerRightDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
+const LeftDivPics = styled.img`
+  width: 300px; 
+  margin: 10px;
+  padding: 5px;
+  border: 4px solid #ff00d9;
+  height: 85%;
+`;
+
+const VerticalPic = styled.img`
+  height: 96.7%;
+  padding: 5px;
+  margin: 10px;
+  border: 4px solid #ff00d9;
+`;
+
+const RightContainer = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 const RightContainerTopDiv = styled.div`
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    @media only screen (max-device-width: 1200px){
-        flex-direction: column;
-    };
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @media only screen (max-device-width: 1200px) {
+    flex-direction: column;
+  } ;
 `;
-const SmallPic = styled.img`
-    height: 35vh;
-    width: 29vh;
-    padding: 5px;
-    margin: 10px;
-    border: 4px solid #ff00d9;
+
+const SmallPic = styled.img` 
+  padding: 5px;
+  margin: 10px;
+  border: 4px solid #ff00d9;
 `;
 
 const HorizontalPic = styled.img`
-    width: 61vh;
-    height: 49.5%;
-    padding: 5px;
-    margin: 10px;
-    border: 4px solid #ff00d9; 
-    @media only screen and(max-device-width: 1200px){
-        width: 29vh;
-    } 
-`;
-
-const LinkDiv = styled.div`
-    display: flex;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 37px;
-    text-align: center;
-    margin: 100px;
-    margin-top: 100px;
-    @media only screen and (min-device-width: 1200px){
-        position: relative;
-        top: 100px;
-        margin-bottom: 100px;
-    } 
-`;
-
-const LiftOff = styled.img`
-    height: 600px;
-    width: 600px;
-    justify-content: center;
-    margin: 50px;   
+  height: 46.7%;
+  padding: 5px;
+  margin: 10px;
+  border: 4px solid #ff00d9;
 `;
 
 export default function SpaceGallary() {
-    return (
-        <>
-            <BackGround></BackGround>
-            <MainDiv>
-                <LeftContainer>
-                    <VerticalPic src={octo} />
-                    <LeftContainerRightDiv>
-                        <LeftPics src={spaceface} />
-                        <LeftPics src={funkyriver} />
-                    </LeftContainerRightDiv>
-                </LeftContainer>
-                <RightContainer>
-                    <RightContainerTopDiv>
-                        <SmallPic src={orangesky} />
-                        <SmallPic src={mushrooms} />
-                    </RightContainerTopDiv>
-                    <HorizontalPic src={retrowave} />
-                </RightContainer>
-                <LinkDiv>
-                    <h1>Hurry!</h1>
-                    <h3>We are flying down to Earth! </h3>
-                    <p>Click on the Image Below </p>
-                    <Link to="/earth">  <LiftOff src={rocketbro} />
-                    </Link>
-                </LinkDiv>
-            </MainDiv>
-
-        </>
-    );
+  return (
+      <PageDiv>
+    <BackGround>
+      <GalleryDiv>
+        <LeftContainer>
+          <VerticalPic src={octo} />
+          <LeftContainerRightDiv>
+            <LeftDivPics src={spaceface} />
+            <LeftDivPics src={funkyriver} />
+          </LeftContainerRightDiv>
+        </LeftContainer>
+        <RightContainer>
+          <RightContainerTopDiv>
+            <SmallPic src={orangesky} />
+            <SmallPic src={mushrooms} />
+          </RightContainerTopDiv>
+          <HorizontalPic src={retrowave} />
+        </RightContainer>
+      </GalleryDiv>
+    </BackGround>
+    <TakeOffRocket />
+    </PageDiv>
+  );
 }
