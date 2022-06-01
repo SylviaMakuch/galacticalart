@@ -120,7 +120,7 @@ const LiftOff = styled.img`
     margin: 50px;   
 `;
 
-export default function SpacePage() {
+export default function SpaceGallary() {
     return (
         <>
             <BackGround></BackGround>
