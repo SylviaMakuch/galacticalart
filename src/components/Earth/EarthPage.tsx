@@ -19,8 +19,8 @@ const Stars = styled.div`
     height: 7000px;
     z-index: -2;
     overflow-x: hidden;
-    
-    @media(max-width: 1800px){
+
+    @media(max-width: 1845px){
         height: 9000px;
     }
     @media(max-width: 1250px){
@@ -76,12 +76,6 @@ const VertTrans = styled.div <{ $offset: number }>`
     top: 140vh;
     left: 8%;
     transform: translateY(${props => props.$offset * 0.2}px);
-    /* @media(max-width: 1812px){
-        left: 0px;
-    }
-    @media(max-width: 1000px){
-        left: 100px;
-    } */
 `;
 
 function MountainStar() {
