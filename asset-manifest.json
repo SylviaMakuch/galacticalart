@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/galacticalart/static/css/main.e45a3250.chunk.css",
-    "main.js": "/galacticalart/static/js/main.bfa56da5.chunk.js",
-    "main.js.map": "/galacticalart/static/js/main.bfa56da5.chunk.js.map",
+    "main.css": "/galacticalart/static/css/main.e0fed8cc.chunk.css",
+    "main.js": "/galacticalart/static/js/main.0da1bacc.chunk.js",
+    "main.js.map": "/galacticalart/static/js/main.0da1bacc.chunk.js.map",
     "runtime-main.js": "/galacticalart/static/js/runtime-main.42d5ba9b.js",
     "runtime-main.js.map": "/galacticalart/static/js/runtime-main.42d5ba9b.js.map",
-    "static/js/2.f5a254f4.chunk.js": "/galacticalart/static/js/2.f5a254f4.chunk.js",
-    "static/js/2.f5a254f4.chunk.js.map": "/galacticalart/static/js/2.f5a254f4.chunk.js.map",
+    "static/js/2.6a7f574a.chunk.js": "/galacticalart/static/js/2.6a7f574a.chunk.js",
+    "static/js/2.6a7f574a.chunk.js.map": "/galacticalart/static/js/2.6a7f574a.chunk.js.map",
     "index.html": "/galacticalart/index.html",
-    "static/css/main.e45a3250.chunk.css.map": "/galacticalart/static/css/main.e45a3250.chunk.css.map",
-    "static/js/2.f5a254f4.chunk.js.LICENSE.txt": "/galacticalart/static/js/2.f5a254f4.chunk.js.LICENSE.txt",
+    "static/css/main.e0fed8cc.chunk.css.map": "/galacticalart/static/css/main.e0fed8cc.chunk.css.map",
+    "static/js/2.6a7f574a.chunk.js.LICENSE.txt": "/galacticalart/static/js/2.6a7f574a.chunk.js.LICENSE.txt",
     "static/media/artist.2dfd03b4.jpg": "/galacticalart/static/media/artist.2dfd03b4.jpg",
     "static/media/beach.f425526e.jpg": "/galacticalart/static/media/beach.f425526e.jpg",
     "static/media/blondie.798cbd6b.jpg": "/galacticalart/static/media/blondie.798cbd6b.jpg",
@@ -49,8 +49,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.42d5ba9b.js",
-    "static/js/2.f5a254f4.chunk.js",
-    "static/css/main.e45a3250.chunk.css",
-    "static/js/main.bfa56da5.chunk.js"
+    "static/js/2.6a7f574a.chunk.js",
+    "static/css/main.e0fed8cc.chunk.css",
+    "static/js/main.0da1bacc.chunk.js"
   ]
 }
